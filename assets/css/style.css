@@ -13,7 +13,7 @@
 	height: 60px;
 	width: 230px;
 	background-image: url("../images/confectionary.png");
-	border-radius: 25px;
+	border-radius: 16px;
 	padding: 0 40px 0 40px;
 	margin: 10px 0 10px 12px;
 	position: relative;
@@ -35,7 +35,7 @@
 
 .pageLinks {
 	background-image: url("../images/confectionary.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -44,7 +44,7 @@
 
 .pageLinksContact {
 	background-image: url("../images/confectionary.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -53,7 +53,7 @@
 
 .pageLinks:hover {
 	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -62,7 +62,7 @@
 
 .pageLinksContact:hover {
 	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -76,7 +76,7 @@
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
 	border-bottom-width: 5px;
-	border-bottom-color: teal;
+	border-bottom-color: #222;
 	border-bottom-style: solid;
 	background-image: url("../images/containerBG.png");
 	background-repeat: repeat;
@@ -88,14 +88,14 @@
 	float: left;
 	margin: 12px 0px 12px 12px;
 	background-image: url("../images/confectionary.png");
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
+	border-top-right-radius: 19px;
+	border-top-left-radius: 19px;
 	padding: 20px 25px 25px 25px;
 }
 
 .aboutMeTitle {
 	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	padding: 10px 0 0 30px;
 	margin-bottom: 18px;
 	height: 40px;
@@ -105,7 +105,7 @@
 .imgWrap {
 	margin: 7px 10px 0 0;
 	overflow:hidden;
-    border-radius: 25px;
+    border-radius: 12px;
     border: 0px;
     display:inline-block;
     float: left;
@@ -129,7 +129,7 @@ p.aboutMeText {
 	top: 112px;
 	left: 686px;
 	background-image: url("../images/confectionary.png");
-	border-radius: 27px;
+	border-radius: 19px;
 	position: fixed;
 }
 
@@ -154,14 +154,14 @@ body {
 }
 
 h1 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-size: 3em;
 	margin-top: 30px;
 	color: #444;
 }
 
 h2 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
 	font-size: 2.2em;
 	color: #444;
 }
@@ -184,29 +184,27 @@ h2 {
 
 .aboutMeContact {
 	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
+	border-radius: 10px;
 	padding: 10px 0 0 42px;
 	margin-bottom: 18px;
 	height: 40px;
 	width: 158px;
 }
-
-.aboutMePortfolio {
-	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
-	padding: 10px 0 0 42px;
-	margin-bottom: 18px;
-	height: 40px;
-	width: 158px;
-}
-
 
 /*PORTFOLIO SPECIFIC*/
 
+.aboutMePortfolio {
+	background-image: url("../images/containerBG.png");
+	border-radius: 10px;
+	padding: 10px 0 0 42px;
+	margin-bottom: 18px;
+	height: 40px;
+	width: 158px;
+}
 
 .portEntry {
 	float: left;
-	border-radius: 25px;
+	border-radius: 15px;
 	overflow: hidden;
 	margin: 37px;
 	position: relative;
@@ -216,7 +214,7 @@ h2 {
 .portDesc {
 	position: absolute;
 	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
+	border-radius: 15px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
@@ -226,7 +224,7 @@ h2 {
 .portDesc:hover {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
-	border-radius: 25px;
+	border-radius: 15px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
