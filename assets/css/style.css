@@ -225,7 +225,8 @@ h2 {
 	right: 20px;
 }
 
-.portDesc:hover {
+.portDesc:hover,
+.portDesc;active {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
 	border-radius: 25px;
@@ -233,7 +234,7 @@ h2 {
 	height: 50px;
 	bottom: 30px;
 	right: 20px;
-	outline: none;
+	outline: 0;
 }
 
 h3 {
