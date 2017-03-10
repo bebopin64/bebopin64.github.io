@@ -1,3 +1,0 @@
-contact links should scroll with, so position: fixed
-
-seriff for headers

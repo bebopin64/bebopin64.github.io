@@ -211,19 +211,20 @@ h2 {
 	width: 225px;
 }
 
-.portDesc {
+.portEntry:hover .portDesc {
 	position: absolute;
-	background-image: url("../images/containerBG.png");
+	background-image: url("../images/confectionary.png");
 	border-radius: 9px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
 	right: 20px;
+
 }
 
-.portDesc:hover {
+.portDesc {
 	position: absolute;
-	background-image: url("../images/confectionary.png");
+	background-image: url("../images/containerBG.png");
 	border-radius: 9px;
 	width: 180px;
 	height: 50px;
