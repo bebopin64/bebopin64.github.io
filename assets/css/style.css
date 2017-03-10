@@ -135,6 +135,7 @@ p.aboutMeText {
 
 .linkImgFloat {
 	float: left;
+	outline: 0;
 }
 
 .footer {
@@ -223,9 +224,7 @@ h2 {
 	right: 20px;
 }
 
-.portDesc:hover,
-.portDesc;active,
-.portDesc:focus {
+.portDesc:hover {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
 	border-radius: 25px;
@@ -233,7 +232,6 @@ h2 {
 	height: 50px;
 	bottom: 30px;
 	right: 20px;
-	outline: 0;
 }
 
 h3 {
