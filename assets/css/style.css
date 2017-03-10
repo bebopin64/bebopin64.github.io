@@ -1,0 +1,211 @@
+.topContainer {
+	border-radius: 25px;
+	background-image: url("../images/containerBG.png");
+	background-repeat: repeat;
+	overflow: hidden;
+	margin: 10px 10px 10px 10px;
+	width: 960px;
+
+}
+
+.myNameContainer {
+	float: left;
+	height: 60px;
+	width: 230px;
+	background-image: url("../images/confectionary.png");
+	border-radius: 25px;
+	padding: 0 40px 0 40px;
+	margin: 10px 0 10px 12px;
+	position: relative;
+}
+
+.myName {
+	position: absolute;
+	bottom: 8px;
+	right: 13px;
+}
+
+
+.pageNav {
+	float: right;
+	padding-top: 20px;
+	padding-right: 50px;
+
+}
+
+.pageLinks {
+	background-image: url("../images/confectionary.png");
+	border-radius: 25px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+	font-size: 2em;
+	margin: 3px 10px 0 10px;
+}
+
+.pageLinksContact {
+	background-image: url("../images/confectionary.png");
+	border-radius: 25px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+	font-size: 2em;
+	margin: 3px 0 0 10px;
+}
+
+.pageLinks:hover {
+	background-image: url("../images/containerBG.png");
+	border-radius: 25px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+	font-size: 2em;
+	margin: 3px 10px 0 10px;
+}
+
+.pageLinksContact:hover {
+	background-image: url("../images/containerBG.png");
+	border-radius: 25px;
+	float: right;
+	padding: 4px 10px 4px 10px;
+	font-size: 2em;
+	margin: 3px 0 0 10px;
+}
+
+.pageLinkDividers {
+	float: right;
+	margin: 0 auto;
+	padding: 5px;
+	font-size: 2em;
+}
+
+.container {
+	margin: 10px 10px 0 10px;
+	clear: both;
+	overflow: hidden;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-width: 5px;
+	border-bottom-color: teal;
+	border-bottom-style: solid;
+	background-image: url("../images/containerBG.png");
+	background-repeat: repeat;
+	width: 960px;
+}
+
+.aboutMe {
+	width: 650px;
+	float: left;
+	margin: 12px 0px 12px 12px;
+	background-image: url("../images/confectionary.png");
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	padding: 20px 25px 25px 25px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.aboutMeTitle {
+	background-image: url("../images/containerBG.png");
+	border-radius: 25px;
+	padding: 10px 0 0 30px;
+	margin-bottom: 18px;
+	height: 40px;
+	width: 170px;
+}
+
+#headShot {
+	vertical-align:bottom;
+    position:relative;
+    z-index:-1;
+}
+
+.imgWrap {
+	margin: 10px 10px 0 0;
+	overflow:hidden;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 25px;
+    border: 0px;
+    display:inline-block;
+    float: left;
+}
+
+p.aboutMeText {
+	font-size: 1.2em;
+}
+
+.aboutMeText::first-letter {
+	font-size: 1.5em;
+	color: rebeccapurple;
+	padding: 1px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	margin-left: -3px;
+}
+
+.float {
+	height: 56px;
+	width: 161px;
+	top: 112px;
+	left: 760px;
+	background-image: url("../images/confectionary.png");
+	border-radius: 27px;
+	position: fixed;
+}
+
+.linkImgFloat {
+	float: left;
+}
+
+.floatChildA {
+	text-align: center;
+	vertical-align: center;
+	font-size: 2em;
+	margin: 25px 0 40px 0;
+	padding-top: 25px;
+	background-color: white;
+	height: 53px;
+	border-radius: 25px;
+}
+
+.iconsContainer {
+	text-align: center;
+	background-color: white;
+	border-radius: 25px;
+	height: 70px;
+	padding-top: 20px;
+}
+
+.icons {
+	display: inline-block;
+	width: 80px;
+}
+
+.footer {
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background-color: #666;
+	font-size: .8em;
+	color: lightgray;
+	margin: 0 10px 10px 10px;
+	width: 930px;
+}
+
+body {
+	font-size: 13.66px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h1 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 3em;
+	margin-top: 30px;
+	color: #444;
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-size: 2.2em;
+	color: #444;
+}
+
+p {
+	margin: 1em 0px;
+}
