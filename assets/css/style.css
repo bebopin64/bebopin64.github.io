@@ -102,24 +102,6 @@
 	width: 170px;
 }
 
-.aboutMeContact {
-	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
-	padding: 10px 0 0 42px;
-	margin-bottom: 18px;
-	height: 40px;
-	width: 158px;
-}
-
-.aboutMePortfolio {
-	background-image: url("../images/containerBG.png");
-	border-radius: 25px;
-	padding: 10px 0 0 42px;
-	margin-bottom: 18px;
-	height: 40px;
-	width: 158px;
-}
-
 .imgWrap {
 	margin: 7px 10px 0 0;
 	overflow:hidden;
@@ -201,3 +183,41 @@ h2 {
 	margin-left: 5px;
 }
 
+/*PORTFOLIO SPECIFIC*/
+
+.aboutMeContact {
+	background-image: url("../images/containerBG.png");
+	border-radius: 25px;
+	padding: 10px 0 0 42px;
+	margin-bottom: 18px;
+	height: 40px;
+	width: 158px;
+}
+
+.aboutMePortfolio {
+	background-image: url("../images/containerBG.png");
+	border-radius: 25px;
+	padding: 10px 0 0 42px;
+	margin-bottom: 18px;
+	height: 40px;
+	width: 158px;
+}
+
+.portEntry {
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: 250px;
+	height: 200px;
+	background-color: #444;
+	border-radius: 25px;
+	overflow: hidden;
+	margin: 37px;
+}
+
+.portDesc {
+	position: absolute;
+	z-index: 2;
+	top: ;
+	left: ;
+}
