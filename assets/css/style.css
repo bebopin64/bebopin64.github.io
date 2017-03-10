@@ -69,13 +69,6 @@
 	margin: 3px 0 0 10px;
 }
 
-.pageLinkDividers {
-	float: right;
-	margin: 0 auto;
-	padding: 5px;
-	font-size: 2em;
-}
-
 .container {
 	margin: 10px 10px 0 10px;
 	clear: both;
@@ -98,7 +91,6 @@
 	border-top-right-radius: 25px;
 	border-top-left-radius: 25px;
 	padding: 20px 25px 25px 25px;
-	font-family: 'Ubuntu Condensed', sans-serif;
 }
 
 .aboutMeTitle {
@@ -110,14 +102,8 @@
 	width: 170px;
 }
 
-#headShot {
-	vertical-align:bottom;
-    position:relative;
-    z-index:-1;
-}
-
 .imgWrap {
-	margin: 10px 10px 0 0;
+	margin: 7px 10px 0 0;
 	overflow:hidden;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -129,13 +115,13 @@
 
 p.aboutMeText {
 	font-size: 1.2em;
+
 }
 
 .aboutMeText::first-letter {
 	font-size: 1.5em;
 	color: rebeccapurple;
 	padding: 1px;
-	font-family: 'Ubuntu Condensed', sans-serif;
 	margin-left: -3px;
 }
 
@@ -153,30 +139,6 @@ p.aboutMeText {
 	float: left;
 }
 
-.floatChildA {
-	text-align: center;
-	vertical-align: center;
-	font-size: 2em;
-	margin: 25px 0 40px 0;
-	padding-top: 25px;
-	background-color: white;
-	height: 53px;
-	border-radius: 25px;
-}
-
-.iconsContainer {
-	text-align: center;
-	background-color: white;
-	border-radius: 25px;
-	height: 70px;
-	padding-top: 20px;
-}
-
-.icons {
-	display: inline-block;
-	width: 80px;
-}
-
 .footer {
 	clear: both;
 	text-align: center;
@@ -190,7 +152,7 @@ p.aboutMeText {
 
 body {
 	font-size: 13.66px;
-	font-family: 'Georgia', Times, Times New Roman, serif;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h1 {
@@ -204,8 +166,4 @@ h2 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-size: 2.2em;
 	color: #444;
-}
-
-p {
-	margin: 1em 0px;
 }
