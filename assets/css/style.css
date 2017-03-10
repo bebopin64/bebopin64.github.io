@@ -204,7 +204,7 @@ h2 {
 
 .portEntry {
 	float: left;
-	border-radius: 15px;
+	border-radius: 9px;
 	overflow: hidden;
 	margin: 37px;
 	position: relative;
@@ -214,7 +214,7 @@ h2 {
 .portDesc {
 	position: absolute;
 	background-image: url("../images/containerBG.png");
-	border-radius: 15px;
+	border-radius: 9px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
@@ -224,7 +224,7 @@ h2 {
 .portDesc:hover {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
-	border-radius: 15px;
+	border-radius: 9px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
