@@ -224,7 +224,8 @@ h2 {
 }
 
 .portDesc:hover,
-.portDesc;active {
+.portDesc;active,
+.portDesc:focus {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
 	border-radius: 25px;
