@@ -19,6 +19,13 @@
 }
 
 .myName {
+	margin: 10px;
+	background-image: url("../images/containerBG.png");
+	border-radius: 5px;
+	padding: 0 8px 0 7px;
+}
+
+.myName {
 	margin: 10px 10px 9px 10px;
 }
 
