@@ -1,5 +1,7 @@
+
+
 .topContainer {
-	border-radius: 25px;
+	border-radius: 10px;
 	background-image: url("../images/containerBG.png");
 	background-repeat: repeat;
 	overflow: hidden;
@@ -13,7 +15,7 @@
 	height: 60px;
 	width: 230px;
 	background-image: url("../images/confectionary.png");
-	border-radius: 16px;
+	border-radius: 8px;
 	padding: 0 40px 0 40px;
 	margin: 10px 0 10px 12px;
 	position: relative;
@@ -35,7 +37,7 @@
 
 .pageLinks {
 	background-image: url("../images/confectionary.png");
-	border-radius: 10px;
+	border-radius: 5px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -44,7 +46,7 @@
 
 .pageLinksContact {
 	background-image: url("../images/confectionary.png");
-	border-radius: 10px;
+	border-radius: 5px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -53,7 +55,7 @@
 
 .pageLinks:hover {
 	background-image: url("../images/containerBG.png");
-	border-radius: 10px;
+	border-radius: 5px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -62,7 +64,7 @@
 
 .pageLinksContact:hover {
 	background-image: url("../images/containerBG.png");
-	border-radius: 10px;
+	border-radius: 5px;
 	float: right;
 	padding: 4px 10px 4px 10px;
 	font-size: 2em;
@@ -73,8 +75,8 @@
 	margin: 10px 10px 0 10px;
 	clear: both;
 	overflow: hidden;
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 	border-bottom-width: 5px;
 	border-bottom-color: #222;
 	border-bottom-style: solid;
@@ -83,29 +85,35 @@
 	width: 960px;
 }
 
-.aboutMe {
+.main {
 	width: 600px;
 	float: left;
 	margin: 12px 0px 12px 12px;
 	background-image: url("../images/confectionary.png");
-	border-top-right-radius: 19px;
-	border-top-left-radius: 19px;
-	padding: 20px 25px 25px 25px;
+	border-radius: 8px;
+	padding: 20px 11px 11px 11px;
 }
 
-.aboutMeTitle {
+.titleContainer {
 	background-image: url("../images/containerBG.png");
-	border-radius: 10px;
-	padding: 10px 0 0 30px;
-	margin-bottom: 18px;
+	border-radius: 5px;
+	padding-top: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: -10px;
 	height: 40px;
-	width: 170px;
+	width: 600px;
+}
+
+.titleContent {
+	margin: 0 auto;
+	width: 131px;
 }
 
 .imgWrap {
 	margin: 7px 10px 0 0;
 	overflow:hidden;
-    border-radius: 12px;
+    border-radius: 5px;
     border: 0px;
     display:inline-block;
     float: left;
@@ -124,17 +132,17 @@ p.aboutMeText {
 }
 
 .float {
-	height: 100px;
-	width: 270px;
 	top: 112px;
-	left: 686px;
+	left: 663px;
 	background-image: url("../images/confectionary.png");
-	border-radius: 19px;
+	border-radius: 8px;
+	padding: 5px;
 	position: fixed;
 }
 
 .linkImgFloat {
 	float: left;
+	margin: 5px 5px 5px 5px;
 }
 
 .footer {
@@ -142,6 +150,8 @@ p.aboutMeText {
 	text-align: center;
 	padding: 15px;
 	background-color: #666;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 	font-size: .8em;
 	color: lightgray;
 	margin: 0 10px 10px 10px;
@@ -176,60 +186,57 @@ h2 {
 	color: #444;
 	font-size: 1.2em;
 	font-weight: 700;
+	margin-left: 6px;
 }
 
 .contactA {
 	margin-left: 5px;
 }
 
-.aboutMeContact {
-	background-image: url("../images/containerBG.png");
+.input {
 	border-radius: 10px;
-	padding: 10px 0 0 42px;
-	margin-bottom: 18px;
-	height: 40px;
-	width: 158px;
+	height: 44px;
+	width: 100px;
+	background-image: url("../images/confectionary.png");
+	border-width: 0px;
+	margin: 0 0 3px 5px;
+	font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+.input:hover {
+	background-image: url("../images/containerBG.png");
+}
 /*PORTFOLIO SPECIFIC*/
-
-.aboutMePortfolio {
-	background-image: url("../images/containerBG.png");
-	border-radius: 10px;
-	padding: 10px 0 0 42px;
-	margin-bottom: 18px;
-	height: 40px;
-	width: 158px;
-}
 
 .portEntry {
 	float: left;
-	border-radius: 9px;
+	border-radius: 5px;
 	overflow: hidden;
 	margin: 37px;
+	margin-bottom: 10px;
 	position: relative;
-	width: 225px;
+	width: 213px;
 }
 
 .portEntry:hover .portDesc {
 	position: absolute;
 	background-image: url("../images/confectionary.png");
-	border-radius: 9px;
+	border-radius: 5px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
-	right: 20px;
+	right: 18px;
 
 }
 
 .portDesc {
 	position: absolute;
 	background-image: url("../images/containerBG.png");
-	border-radius: 9px;
+	border-radius: 5px;
 	width: 180px;
 	height: 50px;
 	bottom: 30px;
-	right: 20px;
+	right: 18px;
 }
 
 h3 {
@@ -241,3 +248,8 @@ h3 {
 }
 
 
+.test {
+	background-image: url("../images/containerBG.png");
+	border-radius: 5px;
+	padding: 13px;
+}
