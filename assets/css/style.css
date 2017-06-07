@@ -1,251 +1,133 @@
-
-
-.topContainer {
-	border-radius: 10px;
-	background-image: url("../images/containerBG.png");
-	background-repeat: repeat;
-	overflow: hidden;
-	margin: 10px 10px 10px 10px;
-	width: 960px;
-
-}
-
-.myNameContainer {
-	float: left;
-	background-image: url("../images/confectionary.png");
-	border-radius: 8px;
-	margin: 10px 0 10px 12px;
-	text-align: center;
-}
-
-.myName {
-	margin: 10px;
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	padding: 0 8px 0 7px;
-}
-
-.myName {
-	margin: 10px 10px 9px 10px;
-}
-
-
-.pageNav {
-	float: right;
-	padding-top: 20px;
-	padding-right: 25px;
-
-}
-
-.pageLinks {
-	background-image: url("../images/confectionary.png");
-	border-radius: 5px;
-	float: right;
-	padding: 4px 10px 4px 10px;
-	font-size: 2em;
-	margin: 3px 10px 0 10px;
-}
-
-.pageLinksContact {
-	background-image: url("../images/confectionary.png");
-	border-radius: 5px;
-	float: right;
-	padding: 4px 10px 4px 10px;
-	font-size: 2em;
-	margin: 3px 0 0 10px;
-}
-
-.pageLinks:hover {
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	float: right;
-	padding: 4px 10px 4px 10px;
-	font-size: 2em;
-	margin: 3px 10px 0 10px;
-}
-
-.pageLinksContact:hover {
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	float: right;
-	padding: 4px 10px 4px 10px;
-	font-size: 2em;
-	margin: 3px 0 0 10px;
-}
-
-.container {
-	margin: 10px 10px 0 10px;
-	clear: both;
-	overflow: hidden;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
-	border-bottom-width: 5px;
-	border-bottom-color: #222;
-	border-bottom-style: solid;
-	background-image: url("../images/containerBG.png");
-	background-repeat: repeat;
-	width: 960px;
-}
-
-.main {
-	width: 600px;
-	float: left;
-	margin: 12px 0px 12px 12px;
-	background-image: url("../images/confectionary.png");
-	border-radius: 8px;
-	padding: 20px 11px 11px 11px;
-}
-
-.titleContainer {
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	padding-top: 10px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	margin-top: -10px;
-	height: 40px;
-	text-align: center;
-}
-
-.imgWrap {
-	margin: 7px 10px 0 0;
-	overflow:hidden;
-    border-radius: 5px;
-    border: 0px;
-    display:inline-block;
-    float: left;
-}
-
-p.aboutMeText {
-	font-size: 1.2em;
-
-}
-
-.aboutMeText::first-letter {
-	font-size: 1.5em;
-	color: rebeccapurple;
-	padding: 1px;
-	margin-left: -3px;
-}
-
-.float {
-	top: 112px;
-	left: 663px;
-	background-image: url("../images/confectionary.png");
-	border-radius: 8px;
-	padding: 5px;
-	position: fixed;
-}
-
-.linkImgFloat {
-	float: left;
-	margin: 5px 5px 5px 5px;
-}
-
-.footer {
-	clear: both;
-	text-align: center;
-	padding: 15px;
-	background-color: #666;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	font-size: .8em;
-	color: lightgray;
-	margin: 0 10px 10px 10px;
-	width: 930px;
-}
-
 body {
-	font-size: 13.66px;
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/light_wool.png);
 }
 
-h1 {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-size: 3em;
-	color: #444;
+/*-------------------*/
+/*Cube Animation Area*/
+/*-------------------*/
+
+.scene {
+  width: 100vw;
+  height: 91vh;
+  margin: 0 auto 0;
+  perspective: 40000px;
 }
 
-h2 {
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-size: 2.2em;
-	color: #444;
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform .8s cubic-bezier(.58,.07,.35,1.04);
 }
 
-
-
-/*CONTACT SPECIFIC (Mostly)*/
-
-
-
-.contactQ {
-	color: #444;
-	font-size: 1.2em;
-	font-weight: 700;
-	margin-left: 6px;
+.cube.left-view {
+	transform: rotateY(90deg);
 }
 
-.contactA {
-	margin-left: 5px;
+.cube.back-view {
+	transform: rotateY(180deg);
 }
 
-.input {
-	border-radius: 10px;
-	height: 44px;
-	width: 100px;
-	background-image: url("../images/confectionary.png");
-	border-width: 0px;
-	margin: 0 0 3px 5px;
-	font-family: 'Helvetica Neue', Helvetica, sans-serif;
+.cube.top-view {
+	transform: rotateX(-90deg);
 }
 
-.input:hover {
-	background-image: url("../images/containerBG.png");
+.cube.right-view {
+	transform: rotateY(-90deg);
 }
-/*PORTFOLIO SPECIFIC*/
 
-.portEntry {
-	float: left;
-	border-radius: 5px;
-	overflow: hidden;
-	margin: 37px;
-	margin-bottom: 10px;
+.cube.bottom-view {
+	transform: rotateX(90deg);
+}
+
+.side {
+	padding: 0 15vw 0 15vw;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url(../images/light_wool.png);
+  font: 50px/1 'Trebuchet MS', sans-serif;
+  color: #0E121A;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: translateZ(-50vw) rotateY(180deg);
+}
+.top {
+  transform: translateY(-50vh) rotateX(90deg);
+}
+.bottom {
+  transform: translateY(50vh) rotateX(-90deg);
+}
+.front {
+  transform: translateZ(50vw);
+}
+.left {
+	transform: translateX(-50vw) rotateY(-90deg);
+}
+.right {
+	transform: translateX(50vw) rotateY(90deg);
+}
+.top, .bottom {
+  background-color: rgba(105, 136, 190, 0.5)
+}
+
+/*-------------------*/
+/*Menu Animation Area*/
+/*-------------------*/
+
+
+.footContainer {
+	height: 9vh;
+	width: 100vw;
+	padding-left: 20vw;
+	background-image: url(../images/ep_naturalblack.png);
 	position: relative;
-	width: 213px;
+	z-index: 20;
 }
 
-.portEntry:hover .portDesc {
-	position: absolute;
-	background-image: url("../images/confectionary.png");
-	border-radius: 5px;
-	width: 180px;
-	height: 50px;
-	bottom: 30px;
-	right: 18px;
-
-}
-
-.portDesc {
-	position: absolute;
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	width: 180px;
-	height: 50px;
-	bottom: 30px;
-	right: 18px;
-}
-
-h3 {
+.navButton {
+	cursor: pointer;
+	padding-top: 3vh;
+	font-size: 3vh;
+	color: white;
+	width: 10vw;
+	float: left;
 	text-align: center;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 1.5em;
-	color: #444;
-	margin-top: 15px;
 }
 
+.navButton:hover {
+	text-shadow: 0 0 10px #fff;
+}
 
-.test {
-	background-image: url("../images/containerBG.png");
-	border-radius: 5px;
-	padding: 13px;
+.active {
+	text-shadow: 0 0 10px #fff;
+	margin-top: -5px;
+	border-radius: 50px;
+	border-top: 5px	solid #0E121A;
+}
+
+/*-------------------*/
+/*Test Area*/
+/*-------------------*/
+
+.testFont {
+	font-size: 2vh; 
+	color: black; 
+	padding-top: 25vh;
+}
+
+#test {
+	animation: shootingStar .7s linear 0s infinite;
+}
+
+@keyframes shootingStar {
+	0% {transform: translateX(0px);}
+	100% {transform: translateX(85vw) translateY(85vh);}
 }
