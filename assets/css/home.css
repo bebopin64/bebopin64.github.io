@@ -1,16 +1,48 @@
 .home-right-content {
-  height: 400px;
-  width: 600px;
+  height: 200px;
+  width: 350px;
   position: absolute;
+  pointer-events: none;
+  left: calc(30% - 150px);
+  top: calc(40% - 150px);
 }
 
 .home-right-content div {
   letter-spacing: 5px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .line-1 {
-
+  position: absolute;
+  left: 98px;
+  top: 10px;
 }
+
+.line-2 {
+  position: absolute;
+  left: 34px;
+  top: 35px;
+}
+
+.line-3 {
+  position: absolute;
+  left: 109px;
+  top: 91px;
+}
+
+.line-4 {
+  position: absolute;
+  left: 143px;
+  top: 114px;
+}
+
+.line-5 {
+  position: absolute;
+  left: 25px;
+  top: 157px;
+}
+
 .topTest div {
   display: inline-block;
   font-size: 3vh;

@@ -3,7 +3,7 @@
 var colorArr = ["white","white","white","white","white","white","white","white","white","white","#892F52","#D778B8","#7E45A4","#7E45A4","#554FBD"];
 var counter = 0;
 var welcomeIndex = 0;
-var letArr = ["W","E","L","C","O","M","E"];	
+var letArr = ["L","O","A","D","I","N","G"];	
 
 function populateStars() {
 	for (var i = 0;i<10;i++) {
@@ -45,14 +45,13 @@ window.onload = function() {
 		populateStars();
 		populateStars();
 		populateStars();
-
 	}, 100);
 }
 
 
 // --------------------Create Rows------------------------------
 for (var i=0;i<100;i++) {
-	var time = Math.random()/30 + 1;
+	var time = Math.random()/5 + 1.2;
 	$(".splash-cont").append(
 		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform "+time+"s cubic-bezier(.7,0,1,.6);'></div>"
 	);
@@ -82,7 +81,11 @@ function flickerOut() {
 		setTimeout(function() {flickerOut();}, 50);
 	} else {
 		setTimeout(function() {fallLeft();}, 1000);
-		setTimeout(function() {$(".splash").remove(); letters("|Developer", ".topTest"); Developer();}, 4500);
+		setTimeout(function() {
+			$(".splash").remove(); 
+			line1letters(); 
+			line1word();
+		}, 3000);
 	}
 }
 
@@ -95,7 +98,7 @@ function fallLeft() {
 	$(target).addClass("slideDown");
 	left++;
 	if (left < 100) {
-		setTimeout(function() {fallLeft();}, 1);
+		fallLeft();
 	}
 }
 
