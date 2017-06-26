@@ -82,7 +82,7 @@ function flickerOut() {
 		setTimeout(function() {flickerOut();}, 50);
 	} else {
 		setTimeout(function() {fallLeft();}, 1000);
-		setTimeout(function() {$(".splash").remove(); letters("Developer", ".topTest");}, 4500);
+		setTimeout(function() {$(".splash").remove(); letters("|Developer", ".topTest"); Developer();}, 4500);
 	}
 }
 

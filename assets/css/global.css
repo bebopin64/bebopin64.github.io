@@ -435,6 +435,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   z-index: 8;
   text-align: center;
   transform: rotateZ();
+  letter-spacing: .3vh;
 }
 .topTest div {
   display: inline-block;
@@ -516,11 +517,12 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 .g-div {
   transform-style: preserve-3d;
-  right: -50%;
-  font-size: 62.5px;
-  padding-top: 31.25px;
+  right: -48%;
+  font-size: 55px;
+  padding-top: 34px;
   transform: translateZ(35px);
   font-family: 'Orbitron', cursive;
+  font-weight: 700;
 }
 
 .make-div {

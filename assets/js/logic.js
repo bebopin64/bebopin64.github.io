@@ -31,15 +31,33 @@ $(".social-letters").hover(function() {
 });
 
 var lettersArr = "abcdefghijklmnopqrstuvwxyz".split('');
-var wordSoFar = "Devel";
+var wordSoFar = "";
 
-function letters(word, div) {
+function letters(string, div) {
 	var temp = "";
 	var target = $(".topTest");
-	for (j=0;j < (word.length - wordSoFar.length);j++) {
+	for (j=0;j < (string.length - wordSoFar.length);j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	target.text(wordSoFar + temp);
-	temp = "";
-	setTimeout(function() {letters(word)}, 50);
+	if (temp === "") {
+		console.log("done");
+	} else {
+		temp = "";
+		setTimeout(function() {letters(string)}, 50);
+	}
+}
+
+var developerArr = ["|","D","e","v","e","l","o","p","e","r"];
+var developerIndex = 0;
+
+function Developer() {
+	console.log(developerArr[developerIndex]);
+	wordSoFar += developerArr[developerIndex];
+	developerIndex++;
+	if (developerIndex === developerArr.length) {
+		console.log("done");
+	} else {
+		setTimeout(function() {Developer();}, 200);
+	}
 }
