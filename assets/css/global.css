@@ -1,0 +1,537 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+
+/*----------------------------------------------------------------*/
+/*------------------------Structure of Page-----------------------*/
+/*----------------------------------------------------------------*/
+
+.scene {
+  position: absolute;
+  top: 10vh;
+  width: 15vh;
+  height: 15vh;
+  margin: 0 auto 0;
+  perspective: 100vw;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s ease-in-out;
+  transform-style: preserve-3d;
+  transform: translateZ(100vw);
+}
+
+.wall {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: visible;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+}
+
+.top {
+  height: 100%;
+  width: 100%;
+  transform: translateZ(10vw;) rotateX(-90deg);
+  background-color: gray;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+.frame-master {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.under {
+  width: 60vw;
+  height: 80vh;
+  left: 20vw;
+  background-color: white;
+  box-shadow: inset 0 0 1vh 0;
+  position: absolute;
+}
+
+.over {
+  position: absolute;
+  height: 80vh;
+  width: 60vw;
+  left: 20vw;
+  background-color: ghostwhite;
+  transition: transform 1s ease-in-out, box-shadow .7s ease-out .8s;
+/*  border: .1px dotted lightgray;
+  border-top: none;*/
+}
+
+.over.up {
+  transition: transform 1s ease-in-out .5s, box-shadow .7s ease-in;
+}
+
+.over.slide {
+  transform: translateY(-76vh);
+  box-shadow: 0 0 1vh 0;
+}
+
+/*-------------------------------------------------------------------*/
+
+
+.social-holder {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  font-size: 3vh;
+  z-index: 10;
+}
+
+.social-under {
+  position: absolute;
+    height: 4vh;
+    width: 14vw;
+    top: 4vh;
+    left: 87vw;
+  box-shadow: inset 0 0 .2vh 0;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.social-over {
+  position: absolute;
+  height: 4vh;
+  width: 14vw;
+  top: 4vh;
+  left: 87vw;
+  background-color: ghostwhite;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  cursor: pointer;
+  transition: transform 1s ease-in-out, box-shadow .7s ease-out .8s;
+}
+
+.social-up {
+  transition: transform 1s ease-in-out .5s, box-shadow .7s ease-in;
+}
+
+.social-slide {
+  transform: translateX(12vw);
+  box-shadow: 0 0 .2vh 0;
+}
+
+.social-label-black {
+  letter-spacing: .4vw;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  transition: letter-spacing .3s ease-in-out;
+}
+
+.shake-black {
+  letter-spacing: 3vw;
+}
+
+.social-label-red {
+  letter-spacing: .4vw;
+  position: absolute;
+  width: 100%;
+  color: red;
+  opacity: .4;
+  transition: letter-spacing .3s ease-in-out;
+}
+
+.shake-red {
+  animation: shakeRed 3s infinite;
+  letter-spacing: 3vw;
+}
+
+
+.social-label-blue {
+  letter-spacing: .4vw;
+  position: absolute;
+  width: 100%;
+  color: blue;
+  opacity: .4;
+  transition: letter-spacing .3s ease-in-out;
+}
+
+.shake-blue {
+  animation: shakeBlue 3s infinite;
+  letter-spacing: 3vw;
+}
+
+.social-letters {
+  padding-top: 3vh;
+}
+
+@keyframes shakeRed {
+  0% {
+    transform: translate(-2px,1px);
+  }
+  13.9% {
+    : 1;
+  }
+  14% {
+    transform: translate(1px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  14.9% {
+    transform: translate(0px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  15% {
+    transform: translate(0px,-1px);
+  }
+  22.9% {
+    transform: translate(-1px,1px);
+  }
+  23% {
+    transform: translate(0px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  24.9% {
+    transform: translate(0px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  25% {
+    transform: translate(-1px,-1px);
+  }
+  34.9% {
+    transform: translate(1px,1px);
+  }
+  35% {
+    transform: translate(-1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  39.9% {
+    transform: translate(0px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  40% {
+    transform: translate(1px,0px);
+  }
+  42.9% {
+    transform: translate(0px,1px);
+  }
+  43% {
+    transform: translate(-2px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  44.9% {
+    transform: translate(1px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  45% {
+    transform: translate(1px,1px);
+  }
+  50% {
+    transform: translate(0px,-2px);
+  }
+  54.9% {
+    transform: translate(-1px,-1px);
+  }
+  55% {
+    transform: translate(0px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  69.4% {
+    transform: translate(1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  69.5% {
+    transform: translate(1px,-1px);
+  }
+  69.9% {
+    transform: translate(-1px,-2px);
+  }
+  70% {
+    transform: translate(0px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  79.4% {
+    transform: translate(-1px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  79.9% {
+    transform: translate(-2px,-1px);
+  }
+  80% {
+    transform: translate(1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  89.8% {
+    transform: translate(1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  89.9% {
+    transform: translate(-2px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  90% {
+    transform: translate(-2px,0px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    transform: translate(-1px,1px);
+  }
+}
+
+@keyframes shakeBlue {
+  0% {
+    transform: translate(1px,-2px);
+  }
+  13.9% {
+    : 1;
+  }
+  14% {
+    transform: translate(-2px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  14.9% {
+    transform: translate(-1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  15% {
+    transform: translate(0px,1px);
+  }
+  22.9% {
+    transform: translate(0px,-2px);
+  }
+  23% {
+    transform: translate(-2px,0px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  24.9% {
+    transform: translate(0px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  25% {
+    transform: translate(0px,-1px);
+  }
+  34.9% {
+    transform: translate(-2px,1px);
+  }
+  35% {
+    transform: translate(-2px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  39.9% {
+    transform: translate(-2px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  40% {
+    transform: translate(1px,1px);
+  }
+  42.9% {
+    transform: translate(-2px,0px);
+  }
+  43% {
+    transform: translate(-1px,0px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  44.9% {
+    transform: translate(0px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  45% {
+    transform: translate(-1px,0px);
+  }
+  50% {
+    transform: translate(-1px,1px);
+  }
+  54.9% {
+    transform: translate(0px,1px);
+  }
+  55% {
+    transform: translate(-2px,0px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  69.4% {
+    transform: translate(-2px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  69.5% {
+    transform: translate(0px,1px);
+  }
+  69.9% {
+    transform: translate(-1px,0px);
+  }
+  70% {
+    transform: translate(1px,-1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  79.4% {
+    transform: translate(-2px,1px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  79.9% {
+    transform: translate(-2px,-1px);
+  }
+  80% {
+    transform: translate(-1px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  89.8% {
+    transform: translate(0px,0px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  89.9% {
+    transform: translate(-2px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  90% {
+    transform: translate(-2px,-2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  100% {
+    transform: translate(1px,1px);
+  }
+}
+
+
+.topTest {
+  height: 9vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+  text-align: center;
+  transform: rotateZ();
+}
+.topTest div {
+  display: inline-block;
+  font-size: 3vh;
+  padding: 3vh 0 3vh 0;
+  width: 3vh;
+  text-align: center;
+/*  margin: 0 .5vh 0 .5vh;*/
+}
+.bottomTest {
+  height: 9vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+}
+.leftTest {
+  height: 100vh;
+  width: 10vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 8;
+}
+.rightTest {
+  height: 100vh;
+  width: 10vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+}
+
+.test-box {
+  height: 500px; 
+  width: 500px;
+  position: fixed;
+  top: calc(50vh - 250px);
+  left: calc(50vw - 250px);
+  perspective: 500px;
+}
+
+.test-cont {
+  position: relative;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;}
+
+.test-cont div {
+  transform-style: preserve-3d;
+  position: absolute;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/x2.svg);
+  background-size: 100% 100%;
+  transform: translateZ(-200px) scale(2.0);
+}
+
+.w-div {
+  transform-style: preserve-3d;
+  left: -250px;
+  font-size: 250px;
+  padding-top: 125px;
+  transform: translateZ(150px);
+  font-family: 'Orbitron', cursive;
+}
+
+.g-div {
+  transform-style: preserve-3d;
+  right: -230px;
+  font-size: 250px;
+  padding-top: 125px;
+  transform: translateZ(150px);
+  font-family: 'Orbitron', cursive;
+}
+
+.make-div {
+  transform-style: preserve-3d;
+  height: 10%;
+  font-size: 50px;
+  top: 60px;
+  transform: translateZ(150px);
+}
+
+.web-div {
+  transform-style: preserve-3d;
+  font-size: 50px;
+  top: 400px;
+  transform: translateZ(150px);
+}

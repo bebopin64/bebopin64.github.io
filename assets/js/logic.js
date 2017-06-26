@@ -1,46 +1,45 @@
-$(".go-to-left").on("click", function() {
-	console.log("getting input");
-	$(".footContainer").children().removeClass("active");
-	$("#button-left").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube left-view");
-})
+$(".social-label-black").on('click', function() {
+	$(".over").toggleClass("slide");
+	$(".over").toggleClass("up");
+});
 
-$(".go-to-front").on("click", function() {
-	console.log("getting input");
-	$(".footContainer").children().removeClass("active");
-	$("#button-front").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube");
-})
+$(".social-over").on('click', function() {
+	console.log("wut");
+	$(".social-over").toggleClass("social-slide");
+	$(".social-over").toggleClass("social-up");
+});
 
-$(".go-to-back").on("click", function() {
-	$(".footContainer").children().removeClass("active");
-	$("#button-back").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube back-view");
-})
+$(".social-under").on('click', function() {
+	console.log("wut");
+	$(".social-over").toggleClass("social-slide");
+	$(".social-over").toggleClass("social-up");
+});
 
-$(".go-to-top").on("click", function() {
-	console.log("dafuck");
-	$(".footContainer").children().removeClass("active");
-	$("#button-top").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube top-view");
-})
+for (i=0;i<30;i++) {
+	console.log(Math.floor(Math.random()*4 - 2));
+}
 
-$(".go-to-right").on("click", function() {
-	console.log("dafuck");
-	$(".footContainer").children().removeClass("active");
-	$("#button-right").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube right-view");
-})
+$(".social-letters").hover(function() {
+	console.log("read");
+	$(".social-label-red").toggleClass("shake-red");
+	$(".social-label-blue").toggleClass("shake-blue");
+	$(".social-label-black").toggleClass("shake-black");
+}, function() {
+	$(".social-label-red").toggleClass("shake-red");
+	$(".social-label-blue").toggleClass("shake-blue");
+	$(".social-label-black").toggleClass("shake-black");
+});
 
-$(".go-to-bottom").on("click", function() {
-	console.log("dafuck");
-	$(".footContainer").children().removeClass("active");
-	$("#button-bottom").addClass("active");
-	$("#cubeID").removeClass();
-	$("#cubeID").addClass("cube bottom-view");
-})
+var lettersArr = "abcdefghijklmnopqrstuvwxyz".split('');
+var wordSoFar = "Devel";
+
+function letters(word, div) {
+	var temp = "";
+	var target = $(".topTest");
+	for (j=0;j < (word.length - wordSoFar.length);j++) {
+		temp += lettersArr[Math.floor(Math.random()*26)];
+	}
+	target.text(wordSoFar + temp);
+	temp = "";
+	setTimeout(function() {letters(word)}, 50);
+}

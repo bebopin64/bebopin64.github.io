@@ -1,0 +1,27 @@
+.navContainer {
+	position: fixed;
+	width: 60vw;
+	height: 14vh;
+	left: 20vw;
+	top: 0;
+}
+
+.nav {
+	margin: 0 auto;
+	float: left;
+	color: white;
+	background-color: rgba(0,0,0,0);
+}
+
+.nav.left {
+	width: 10vw;
+	color: red;
+}
+
+.nav.back {
+	width: 10vw;
+}
+
+.nav.right {
+	width: 10vw;
+}
