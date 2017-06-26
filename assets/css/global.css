@@ -485,7 +485,9 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   position: relative;
   transform-style: preserve-3d;
   height: 100%;
-  width: 100%;}
+  width: 100%;
+  transition: transform .4s ease-out;
+}
 
 .test-cont div {
   transform-style: preserve-3d;
