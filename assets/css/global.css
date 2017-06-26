@@ -425,26 +425,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 
-.topTest {
-  height: 9vh;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 8;
-  text-align: center;
-  transform: rotateZ();
-  letter-spacing: .3vh;
-}
-.topTest div {
-  display: inline-block;
-  font-size: 3vh;
-  padding: 3vh 0 3vh 0;
-  width: 3vh;
-  text-align: center;
-/*  margin: 0 .5vh 0 .5vh;*/
-}
+
 .bottomTest {
   height: 9vh;
   width: 100vw;

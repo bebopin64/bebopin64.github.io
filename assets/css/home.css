@@ -1,0 +1,21 @@
+.home-right-content {
+  height: 400px;
+  width: 600px;
+  position: absolute;
+}
+
+.home-right-content div {
+  letter-spacing: 5px;
+}
+
+.line-1 {
+
+}
+.topTest div {
+  display: inline-block;
+  font-size: 3vh;
+  padding: 3vh 0 3vh 0;
+  width: 3vh;
+  text-align: center;
+/*  margin: 0 .5vh 0 .5vh;*/
+}
