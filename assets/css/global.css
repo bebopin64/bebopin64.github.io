@@ -473,12 +473,12 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .test-box {
-  height: 500px; 
-  width: 500px;
+  height: 125px; 
+  width: 125px;
   position: fixed;
-  top: calc(50vh - 250px);
-  left: calc(50vw - 250px);
-  perspective: 500px;
+  top: calc(50vh - 62.5px);
+  left: calc(50vw - 62.5px);
+  perspective: 125px;
 }
 
 .test-cont {
@@ -493,8 +493,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   transform-style: preserve-3d;
   position: absolute;
   text-align: center;
-  height: 500px;
-  width: 500px;
+  height: 100%;
+  width: 100%;
 }
 
 .background {
@@ -502,38 +502,38 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   width: 100%;
   background-image: url(../images/x2.svg);
   background-size: 100% 100%;
-  transform: translateZ(-200px) scale(2.0);
+  transform: translateZ(-50px) scale(2.0);
 }
 
 .w-div {
   transform-style: preserve-3d;
-  left: -250px;
-  font-size: 250px;
-  padding-top: 125px;
-  transform: translateZ(150px);
-  font-family: 'Orbitron', cursive;
+  left: -50%;
+  font-size: 62.5px;
+  padding-top: 31.25px;
+  transform: translateZ(35px);
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .g-div {
   transform-style: preserve-3d;
-  right: -230px;
-  font-size: 250px;
-  padding-top: 125px;
-  transform: translateZ(150px);
+  right: -50%;
+  font-size: 62.5px;
+  padding-top: 31.25px;
+  transform: translateZ(35px);
   font-family: 'Orbitron', cursive;
 }
 
 .make-div {
   transform-style: preserve-3d;
   height: 10%;
-  font-size: 50px;
-  top: 60px;
-  transform: translateZ(150px);
+  font-size: 13px;
+  top: 10%;
+  transform: translateZ(40px);
 }
 
 .web-div {
   transform-style: preserve-3d;
-  font-size: 50px;
-  top: 400px;
-  transform: translateZ(150px);
+  font-size: 13px;
+  top: 80%;
+  transform: translateZ(40px);
 }
