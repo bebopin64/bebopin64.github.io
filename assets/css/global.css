@@ -80,6 +80,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 /*-------------------------------------------------------------------*/
 
+.contact-holder {
+  position: absolute;
+  height: 9vh;
+  width: 100vw;
+}
 
 .social-holder {
   width: 100%;
@@ -87,40 +92,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   position: relative;
   font-size: 3vh;
   z-index: 10;
-}
-
-.social-under {
-  position: absolute;
-    height: 4vh;
-    width: 14vw;
-    top: 4vh;
-    left: 87vw;
-  box-shadow: inset 0 0 .2vh 0;
-  background-color: white;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-}
-
-.social-over {
-  position: absolute;
-  height: 4vh;
-  width: 14vw;
-  top: 4vh;
-  left: 87vw;
-  background-color: ghostwhite;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  cursor: pointer;
-  transition: transform 1s ease-in-out, box-shadow .7s ease-out .8s;
-}
-
-.social-up {
-  transition: transform 1s ease-in-out .5s, box-shadow .7s ease-in;
-}
-
-.social-slide {
-  transform: translateX(12vw);
-  box-shadow: 0 0 .2vh 0;
 }
 
 .social-label-black {
@@ -149,7 +120,6 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   letter-spacing: 3vw;
 }
 
-
 .social-label-blue {
   letter-spacing: .4vw;
   position: absolute;
@@ -173,7 +143,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     transform: translate(-2px,1px);
   }
   13.9% {
-    : 1;
+    transform: translate(-1px, -1px);
   }
   14% {
     transform: translate(1px,-2px);
@@ -301,7 +271,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     transform: translate(1px,-2px);
   }
   13.9% {
-    : 1;
+    transform: translate(0px,1px);
   }
   14% {
     transform: translate(-2px,-2px);
@@ -426,7 +396,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 
 
 
-.bottomTest {
+/*.bottomTest {
   height: 9vh;
   width: 100vw;
   position: fixed;
@@ -452,71 +422,4 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   right: 0;
   bottom: 0;
   z-index: 8;
-}
-
-.test-box {
-  height: 125px; 
-  width: 125px;
-  position: fixed;
-  top: calc(50vh - 62.5px);
-  left: calc(50vw - 62.5px);
-  perspective: 125px;
-}
-
-.test-cont {
-  position: relative;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  transition: transform .4s ease-out;
-}
-
-.test-cont div {
-  transform-style: preserve-3d;
-  position: absolute;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-}
-
-.background {
-  height: 100%;
-  width: 100%;
-  background-image: url(../images/x2.svg);
-  background-size: 100% 100%;
-  transform: translateZ(-50px) scale(2.0);
-}
-
-.w-div {
-  transform-style: preserve-3d;
-  left: -50%;
-  font-size: 62.5px;
-  padding-top: 31.25px;
-  transform: translateZ(35px);
-  font-family: 'Ubuntu', sans-serif;
-}
-
-.g-div {
-  transform-style: preserve-3d;
-  right: -48%;
-  font-size: 55px;
-  padding-top: 34px;
-  transform: translateZ(35px);
-  font-family: 'Orbitron', cursive;
-  font-weight: 700;
-}
-
-.make-div {
-  transform-style: preserve-3d;
-  height: 10%;
-  font-size: 13px;
-  top: 10%;
-  transform: translateZ(40px);
-}
-
-.web-div {
-  transform-style: preserve-3d;
-  font-size: 13px;
-  top: 80%;
-  transform: translateZ(40px);
-}
+}*/

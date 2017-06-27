@@ -1,0 +1,72 @@
+
+.test-box {
+  height: 125px; 
+  width: 125px;
+  position: fixed;
+  top: calc(50vh - 62.5px);
+  left: calc(50vw - 62.5px);
+  perspective: 125px;
+}
+
+.test-cont {
+  position: relative;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+  transition: transform .4s ease-out;
+}
+
+.test-cont div {
+  transform-style: preserve-3d;
+  position: absolute;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url(../images/x2.svg);
+  background-size: 100% 100%;
+  transform: translateZ(-50px) scale(2.0);
+}
+
+.w-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  left: -50%;
+  font-size: 62.5px;
+  padding-top: 31.25px;
+  transform: translateZ(35px);
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.g-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  right: -48%;
+  font-size: 55px;
+  padding-top: 34px;
+  transform: translateZ(35px);
+  font-family: 'Orbitron', cursive;
+  font-weight: 700;
+}
+
+.make-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  height: 10%;
+  font-size: 13px;
+  top: 10%;
+  transform: translateZ(40px);
+}
+
+.web-div {
+  position: absolute;
+  transform-style: preserve-3d;
+  font-size: 13px;
+  top: 80%;
+  transform: translateZ(40px);
+}
