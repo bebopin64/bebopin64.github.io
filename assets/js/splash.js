@@ -80,11 +80,15 @@ function flickerOut() {
 	if (welcomeIndex < 7) {
 		setTimeout(function() {flickerOut();}, 50);
 	} else {
-		setTimeout(function() {fallLeft();}, 1000);
+		setTimeout(function() {fallLeft();}, 1500);
 		setTimeout(function() {
-			$(".splash").remove(); 
-			line1letters(); 
-			line1word();
+			$(".splash").remove();
+			 $(".borders-top").addClass("show1");
+			 $(".borders-bottom").addClass("show1");
+			 setTimeout(function() {
+				line1letters(); 
+				line1word();
+			}, 800); 
 		}, 3000);
 	}
 }

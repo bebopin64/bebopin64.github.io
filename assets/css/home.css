@@ -1,10 +1,28 @@
 .borders {
-  opacity: 0;
-  transition: opacity 2s ease-in;
+  height: 3vh;
+  width: 3vh;
+  transition: height .8s ease-in-out, width .8s ease-in-out;
 }
 
 .borders.show {
-  opacity: 1;
+  height: 23vh;
+  width: 40vw;
+}
+
+.borders-top.show1 {
+  width: 40vw;
+}
+
+.borders-top.show1.show2 {
+  height: 23vh;
+}
+
+.borders-bottom.show1 {
+  height: 23vh;
+}
+
+.borders-bottom.show1.show2 {
+  width: 40vw;
 }
 
 .home-left-content {
@@ -74,32 +92,32 @@
 
 .right.jumble-1 {
   position: absolute;
-  left: 90px;
-  top: 10px;
+  left: 88px;
+  top: 8px;
 }
 
 .right.jumble-2 {
   position: absolute;
-  left: 155px;
-  top: 35px;
+  left: 153px;
+  top: 33px;
 }
 
 .right.jumble-3 {
   position: absolute;
-  left: 123px;
-  top: 91px;
+  left: 121px;
+  top: 89px;
 }
 
 .right.jumble-4 {
   position: absolute;
-  left: 102px;
-  top: 141px;
+  left: 90px;
+  top: 139px;
 }
 
 .right.jumble-5 {
   position: absolute;
-  left: 165px;
-  top: 157px;
+  left: 163px;
+  top: 152px;
 }
 
 .right.sorted-1 {
@@ -125,7 +143,7 @@
 
 .right.sorted-4 {
   position: absolute;
-  left: 102px;
+  left: 92px;
   top: 141px;
   transform: translateY(100vh);
 }
@@ -133,16 +151,16 @@
 .right.sorted-5 {
   position: absolute;
   left: 165px;
-  top: 157px;
+  top: 154px;
   transform: translateY(100vh);
 }
 
 .addToJumble {
-  animation: addToJumble .19s 2 step-end forwards;
+  animation: addToJumble .12942778s 2 step-end forwards;
 }
 
 .addToSorted {
-  animation: addToSorted .22s 2 step-end forwards;
+  animation: addToSorted .21238889s 2 step-end forwards;
 }
 
 

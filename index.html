@@ -34,30 +34,32 @@
 
 <div id="mouse-tracker" style="height: 100vh; width: 100vw; position: absolute;">
 
-<div class="borders" style="
+<div class="borders borders-top" style="
   position: absolute;
   right: 25vw;
   top: 25vh;
-  height: 23vh;
-  width: 40vw;
-  border: 5px dotted blue;
+/*  height: 23vh;
+  width: 40vw;*/
+  border: 5px double rgba(0,0,255,.7);
   border-bottom: none;
   border-left: none;
   pointer-events: none;
 "></div>
-<div class="borders" style="
+<div class="borders borders-bottom" style="
   position: absolute;
-  right: 35vw;
+  left: 25vw;
   bottom: 25vh;
-  height: 23vh;
-  width: 40vw;
-  border: 5px dotted red;
+/*  height: 23vh;
+  width: 40vw;*/
+  border: 5px double rgba(255,0,0,.7);
   border-top: none;
   border-right: none;
   pointer-events: none;
 "></div>
-<div class="test-box" style="pointer-events: none;">
-  <div class="test-cont">
+
+
+<div class="logo-box" style="pointer-events: none;">
+  <div class="logo-cont">
     <div class="w-div">W</div>
     <div class="g-div">G</div>
     <div class="make-div">I Make</div>
@@ -89,7 +91,7 @@
   <div class="right sorted-1"><span style='color: blue ;'>|</span> YOU</div>
   <div class="right sorted-2">ARE <span style='color: red ;'>|</span></div>
   <div class="right sorted-3"><span style='color: red ;'>|</span> VIEWING</div>
-  <div class="right sorted-4"><span style='color: blue ;'>|</span> V.</div>
+  <div class="right sorted-4"><span style='color: blue ;'>|</span> Ver.</div>
   <div class="right sorted-5">ONE <span style='color: red ;'>|</span></div>
 </div>
 </div>
@@ -111,47 +113,47 @@
 </div> -->
 
 <div class="contact-holder">
-<!--   <div class="c1">
+  <div class="c1 contact-target">
     <div class="black">C</div>
     <div class="red">C</div>
     <div class="blue">C</div>
   </div>
-  <div class="c2">
+  <div class="c2 contact-target">
     <div class="black">O</div>
     <div class="red">O</div>
     <div class="blue">O</div></div>
-  <div class="c3">
+  <div class="c3 contact-target">
     <div class="black">N</div>
     <div class="red">N</div>
     <div class="blue">N</div></div>
-  <div class="c4">
+  <div class="c4 contact-target">
     <div class="black">T</div>
     <div class="red">T</div>
     <div class="blue">T</div></div>
-  <div class="c5">
+  <div class="c5 contact-target">
     <div class="black">A</div>
     <div class="red">A</div>
     <div class="blue">A</div></div>
-  <div class="c6">
+  <div class="c6 contact-target">
     <div class="black">C</div>
     <div class="red">C</div>
     <div class="blue">C</div></div>
-  <div class="c7">
+  <div class="c7 contact-target">
     <div class="black">T</div>
     <div class="red">T</div>
     <div class="blue">T</div></div>
-  <div class="c8">
+  <div class="c8 contact-target">
     <div class="black">&nbsp</div>
     <div class="red">&nbsp</div>
     <div class="blue">&nbsp</div></div>
-  <div class="c9">
+  <div class="c9 contact-target">
     <div class="black">M</div>
     <div class="red">M</div>
     <div class="blue">M</div></div>
-  <div class="c10">
+  <div class="c10 contact-target">
     <div class="black">E</div>
     <div class="red">E</div>
-    <div class="blue">E</div></div> -->
+    <div class="blue">E</div></div>
 </div>
 
 
@@ -171,46 +173,3 @@
   <script type="text/javascript" src="assets/js/home.js"></script>
   </body>
 </html>
-
-<!-- 
-
-  <div class="scene2">
-    <div class="rectangle2" id="cubeID">
-      <div class="wall2 front2 techContainer scrollbar" id="style-3">
-        <div class="tech">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech1">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech2">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech3">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech4">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech5">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech6">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-        <div class="tech tech7">
-          <i class="fa fa-github-x5" aria-hidden="true"></i>content
-        </div>
-      </div>
-      <div class="wall2 right2">
-      </div>
-    </div>
-  </div>
-
- -->
-
- <!--       
-
-<svg style="height: 100%; width: 100%; margin-top: 10vh;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="Square" class="BRSQ">
-  <path fill="#D25063" d="M0 0v100h100 V0H80 l-7 15.1c-.9 1.2-.4 2.2 1.1 2.2h12.7c1.5 0 1.9.9.9 2L62.6 47.8c-1 1.1-1.5.8-1.2-.6l4-16.4c.4-1.4-.6-2.6-2.1-2.6H50.5c-1.5 0-2.3-1.2-1.9-2.6L56.8 0"/>
-</svg> -->

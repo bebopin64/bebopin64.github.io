@@ -9,7 +9,7 @@ var line2Index = 0;
 var line3Index = 0;
 var line4Index = 0;
 var line5Index = 0;
-var line1Arr = ["<span style='color: red ;'>|</span>"," ","H","E","L","L","O"];
+var line1Arr = ["<span style='color: red ;'>|</span>"," ","H","E","L","L","O",","];
 var line2Arr = ["W","E","L","C","O","M","E"," ","<span style='color: blue;'>|</span>"];
 var line3Arr = ["<span style='color: blue;'>|</span>"," ","T","O"];
 var line4Arr = ["M","Y"," ","<span style='color: red ;'>|</span>"];
@@ -37,8 +37,8 @@ function line1word() {
 	line1Index++;
 	if (line1Index === line1Arr.length) {
 		console.log("Called word");
-		setTimeout(function() {line2word();}, 40);
-		setTimeout(function() {line2letters();}, 40);
+		setTimeout(function() {line2word();}, 240);
+		setTimeout(function() {line2letters();}, 240);
 	} else {
 		console.log("test2");
 		setTimeout(function() {line1word();}, 120);
@@ -142,8 +142,12 @@ function line5word() {
 	line5 += line5Arr[line5Index];
 	line5Index++;
 	if (line5Index === line5Arr.length) {
-		setTimeout(function() {jumble1word();}, 120);
-		setTimeout(function() {jumble1letters();}, 120);
+			 $(".borders-top").addClass("show2");
+			 $(".borders-bottom").addClass("show2");
+		setTimeout(function() {
+			jumble1letters(); 
+			jumble1word();
+		}, 800); 
 	} else {
 		setTimeout(function() {line5word();}, 80);
 	}
@@ -162,7 +166,7 @@ var jumble5Index = 0;
 var jumble1Arr = "| LSA".split('');
 var jumble2Arr = "TGH |".split('');
 var jumble3Arr = "| KLESDMC |".split('');
-var jumble4Arr = "| I.".split('');
+var jumble4Arr = "| Ipw.".split('');
 var jumble5Arr = "WIK |".split('');
 
 
@@ -295,7 +299,7 @@ function jumble5letters() {
 			$(".sorted-3").addClass("addToSorted");
 			$(".sorted-4").addClass("addToSorted");
 			$(".sorted-5").addClass("addToSorted");
-		}, 300);
+		}, 1000);
 		setTimeout(function() {
 		}, 1500);
 	} else {
@@ -308,7 +312,7 @@ function jumble5word() {
 	jumble5 += jumble5Arr[jumble5Index];
 	jumble5Index++;
 	if (jumble5Index === jumble5Arr.length) {
-		setTimeout(function() {$(".borders").addClass("show");}, 1000);
+		return;
 	} else {
 		setTimeout(function() {jumble5word();}, 40);
 	}

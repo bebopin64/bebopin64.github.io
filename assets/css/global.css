@@ -84,6 +84,53 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   position: absolute;
   height: 9vh;
   width: 100vw;
+  text-align: center;
+}
+
+.contact-target {
+  display: inline-block;
+  vertical-align: center;
+  height: 9vh;
+  position: relative;
+}
+
+.contact-target div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+  padding-top: calc(4.5vh - 14px);
+}
+
+.c1 {
+  width: 3%;
+}
+.c2 {
+  width: 3%;
+}
+.c3 {
+  width: 3%;
+}
+.c4 {
+  width: 3%;
+}
+.c5 {
+  width: 3%;
+}
+.c6 {
+  width: 3%;
+}
+.c7 {
+  width: 3%;
+}
+.c8 {
+  width: 3%;
+}
+.c9 {
+  width: 3%;
+}
+.c10 {
+  width: 3%;
 }
 
 .social-holder {
