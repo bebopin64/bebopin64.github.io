@@ -1,5 +1,4 @@
 $("body").on('mousemove', function(e) {
-	console.log("mov");
 	var xRel = e.pageX;
 	var yRel = e.pageY;
 	var yAngle = ((xRel / window.innerWidth) - .5) * 10;

@@ -21,13 +21,17 @@ var stop = false;
 
 function line1letters() {
 	var temp = "";
-	for (j=0;j < (line1Arr.length - (line1.length - 34));j++) {
-		temp += lettersArr[Math.floor(Math.random()*26)];
+	if (line1.length > 0) {
+		for (j=0;j < (line1Arr.length - (line1.length - 34));j++) {
+			temp += lettersArr[Math.floor(Math.random()*26)];
+		}
+	} else {
+		setTimeout(function() {line1letters();}, 10);
 	}
 	$(".line-1").html(line1 + temp);
-	if (temp = "") {
+	if (temp === "") {
+		return;
 	} else {
-		console.log("blah");
 		temp = "";
 		setTimeout(function() {line1letters();}, 40);
 	}
@@ -37,11 +41,9 @@ function line1word() {
 	line1 += line1Arr[line1Index];
 	line1Index++;
 	if (line1Index === line1Arr.length) {
-		console.log("Called word");
 		setTimeout(function() {line2word();}, 240);
 		setTimeout(function() {line2letters();}, 240);
 	} else {
-		console.log("test2");
 		setTimeout(function() {line1word();}, 120);
 	}
 }
@@ -54,7 +56,7 @@ function line2letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-2").html(line2 + temp);
-	if (temp == "") {
+	if (temp === "") {
 	} else {
 		temp = "";
 		setTimeout(function() {line2letters();}, 40);
@@ -80,7 +82,7 @@ function line3letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-3").html(line3 + temp);
-	if (temp == "") {
+	if (temp === "") {
 	} else {
 		temp = "";
 		setTimeout(function() {line3letters();}, 40);
@@ -106,7 +108,7 @@ function line4letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-4").html(line4 + temp);
-	if (temp == "") {
+	if (temp === "") {
 	} else {
 		temp = "";
 		setTimeout(function() {line4letters();}, 40);
@@ -132,7 +134,7 @@ function line5letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-5").html(line5 + temp);
-	if (temp == "") {
+	if (temp === "") {
 	} else {
 		temp = "";
 		setTimeout(function() {line5letters();}, 40);
@@ -180,10 +182,8 @@ function jumble1letters() {
 	}
 	$(".jumble-1").html(jumble1 + temp);
 	if (jumble1Arr.length === jumble1.length) {
-		console.log("Called letters");
 		setTimeout(function() {jumble2letters();}, 40);
 	} else {
-		console.log("test");
 		temp = "";
 		setTimeout(function() {jumble1letters();}, 40);
 	}
@@ -193,11 +193,9 @@ function jumble1word() {
 	jumble1 += jumble1Arr[jumble1Index];
 	jumble1Index++;
 	if (jumble1Index === jumble1Arr.length) {
-		console.log("Called word");
-		setTimeout(function() {jumble2word();}, 40);
+		setTimeout(function() {jumble2word();}, 80);
 	} else {
-		console.log("test2");
-		setTimeout(function() {jumble1word();}, 40);
+		setTimeout(function() {jumble1word();}, 80);
 	}
 }
 
@@ -209,7 +207,7 @@ function jumble2letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-2").html(jumble2 + temp);
-	if (temp == "") {
+	if (temp === "") {
 		setTimeout(function() {jumble3letters();}, 40);
 	} else {
 		temp = "";
@@ -221,9 +219,9 @@ function jumble2word() {
 	jumble2 += jumble2Arr[jumble2Index];
 	jumble2Index++;
 	if (jumble2Index === jumble2Arr.length) {
-		setTimeout(function() {jumble3word();}, 40);
+		setTimeout(function() {jumble3word();}, 80);
 	} else {
-		setTimeout(function() {jumble2word();}, 40);
+		setTimeout(function() {jumble2word();}, 80);
 	}
 }
 
@@ -235,7 +233,7 @@ function jumble3letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-3").html(jumble3 + temp);
-	if (temp == "") {
+	if (temp === "") {
 		setTimeout(function() {jumble4letters();}, 40);
 	} else {
 		temp = "";
@@ -247,9 +245,9 @@ function jumble3word() {
 	jumble3 += jumble3Arr[jumble3Index];
 	jumble3Index++;
 	if (jumble3Index === jumble3Arr.length) {
-		setTimeout(function() {jumble4word();}, 40);
+		setTimeout(function() {jumble4word();}, 80);
 	} else {
-		setTimeout(function() {jumble3word();}, 40);
+		setTimeout(function() {jumble3word();}, 80);
 	}
 }
 
@@ -261,7 +259,7 @@ function jumble4letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-4").html(jumble4 + temp);
-	if (temp == "") {
+	if (temp === "") {
 		setTimeout(function() {jumble5letters();}, 40);
 	} else {
 		temp = "";
@@ -275,7 +273,7 @@ function jumble4word() {
 	if (jumble4Index === jumble4Arr.length) {
 		setTimeout(function() {stop = true;}, 700);
 	} else {
-		setTimeout(function() {jumble4word();}, 40);
+		setTimeout(function() {jumble4word();}, 80);
 	}
 }
 
@@ -292,7 +290,6 @@ function jumble5letters() {
 		temp = "";
 		jumble5letters();
 		setTimeout(function() {
-			console.log("Final");
 			$(".jumble-1").addClass("addToJumble");
 			$(".jumble-2").addClass("addToJumble");
 			$(".jumble-3").addClass("addToJumble");
@@ -306,7 +303,8 @@ function jumble5letters() {
 		}, 1000);
 		setTimeout(function() {
 		}, 1500);
-		setTimeout(function() {stop = true;}, 10000);
+		setTimeout(function() {
+		}, 10000);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble5letters();}, 40);
@@ -319,6 +317,6 @@ function jumble5word() {
 	if (jumble5Index === jumble5Arr.length) {
 		return;
 	} else {
-		setTimeout(function() {jumble5word();}, 40);
+		setTimeout(function() {jumble5word();}, 80);
 	}
 }

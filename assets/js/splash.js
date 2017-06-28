@@ -30,21 +30,6 @@ window.onload = function() {
 		populateStars();
 		populateStars();
 		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
 	}, 100);
 }
 
