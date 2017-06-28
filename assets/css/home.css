@@ -1,7 +1,31 @@
 .borders {
   height: 3vh;
   width: 3vh;
-  transition: height .8s ease-in-out, width .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.borders-top {
+    position: absolute;
+    right: 25vw;
+    top: 25vh;
+  /*  height: 23vh;
+    width: 40vw;*/
+    border: 7px double rgba(0,0,255,.7);
+    border-bottom: none;
+    border-left: none;
+    pointer-events: none;
+}
+
+.borders-bottom {
+    position: absolute;
+    left: 25vw;
+    bottom: 25vh;
+  /*  height: 23vh;
+    width: 40vw;*/
+    border: 7px double rgba(255,0,0,.7);
+    border-top: none;
+    border-right: none;
+    pointer-events: none;
 }
 
 .borders.show {
@@ -25,6 +49,7 @@
   width: 40vw;
 }
 
+
 .home-left-content {
   height: 200px;
   width: 320px;
@@ -42,32 +67,32 @@
 
 .left.line-1 {
   position: absolute;
-  left: 98px;
-  top: 10px;
+  left: 133px;
+  top: 23px;
 }
 
 .left.line-2 {
   position: absolute;
-  left: 34px;
-  top: 35px;
+  left: 69px;
+  top: 48px;
 }
 
 .left.line-3 {
   position: absolute;
-  left: 109px;
-  top: 91px;
+  left: 144px;
+  top: 104px;
 }
 
 .left.line-4 {
   position: absolute;
-  left: 143px;
-  top: 114px;
+  left: 178px;
+  top: 127px;
 }
 
 .left.line-5 {
   position: absolute;
-  left: 20px;
-  top: 157px;
+  left: 55px;
+  top: 170px;
 }
 
 

@@ -14,6 +14,7 @@ var line2Arr = ["W","E","L","C","O","M","E"," ","<span style='color: blue;'>|</s
 var line3Arr = ["<span style='color: blue;'>|</span>"," ","T","O"];
 var line4Arr = ["M","Y"," ","<span style='color: red ;'>|</span>"];
 var line5Arr = ["<span style='color: blue;'>|</span>"," ","P","O","R","T","F","O","L","I","O"];
+var stop = false;
 
 
 // -----1-------
@@ -272,7 +273,7 @@ function jumble4word() {
 	jumble4 += jumble4Arr[jumble4Index];
 	jumble4Index++;
 	if (jumble4Index === jumble4Arr.length) {
-		setTimeout(function() {jumble5word();}, 40);
+		setTimeout(function() {stop = true;}, 700);
 	} else {
 		setTimeout(function() {jumble4word();}, 40);
 	}
@@ -286,7 +287,10 @@ function jumble5letters() {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-5").html(jumble5 + temp);
-	if (temp == "") {
+	if (stop) {
+		stop = false;
+		temp = "";
+		jumble5letters();
 		setTimeout(function() {
 			console.log("Final");
 			$(".jumble-1").addClass("addToJumble");
@@ -302,6 +306,7 @@ function jumble5letters() {
 		}, 1000);
 		setTimeout(function() {
 		}, 1500);
+		setTimeout(function() {stop = true;}, 10000);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble5letters();}, 40);

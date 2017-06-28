@@ -1,14 +1,15 @@
-$("#mouse-tracker").on('mousemove', function(e) {
+$("body").on('mousemove', function(e) {
+	console.log("mov");
 	var xRel = e.pageX;
 	var yRel = e.pageY;
-	var yAngle = ((xRel / window.innerWidth) - .5) * 7.5;
-	var xAngle = -((yRel / window.innerHeight) - .5) * 7.5;
+	var yAngle = ((xRel / window.innerWidth) - .5) * 10;
+	var xAngle = -((yRel / window.innerHeight) - .5) * 10;
 	updateView(xAngle, yAngle);
 })
 
 function updateView(xAngle, yAngle) {
 	var transform = "rotateX(" + xAngle + "deg) rotateY(" + yAngle + "deg)";
-	$(".test-cont").css({
+	$(".logo-cont").css({
 		'transform': transform
 	})
 }

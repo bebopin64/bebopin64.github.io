@@ -17,7 +17,6 @@
 }
 
 .logo-cont div {
-  transform-style: preserve-3d;
   position: absolute;
   text-align: center;
   height: 100%;
@@ -35,7 +34,6 @@
 
 .w-div {
   position: absolute;
-  transform-style: preserve-3d;
   left: -50%;
   font-size: 62.5px;
   padding-top: 31.25px;
@@ -45,7 +43,6 @@
 
 .g-div {
   position: absolute;
-  transform-style: preserve-3d;
   right: -48%;
   font-size: 55px;
   padding-top: 34px;
@@ -56,7 +53,6 @@
 
 .make-div {
   position: absolute;
-  transform-style: preserve-3d;
   height: 10%;
   font-size: 13px;
   top: 10%;
@@ -65,7 +61,6 @@
 
 .web-div {
   position: absolute;
-  transform-style: preserve-3d;
   font-size: 13px;
   top: 80%;
   transform: translateZ(40px);
