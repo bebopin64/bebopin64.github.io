@@ -1,6 +1,6 @@
 // NAV CONTACT NAC CONTACT NAC CONTACT
 
-$(".contact-holder").hover(function() {
+$(".contact-hover").hover(function() {
 	$(".red").addClass("red-shake");
 	$(".blue").addClass("blue-shake");
 	$(".contact-target").addClass("topNavAnimation");

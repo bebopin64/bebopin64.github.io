@@ -9,11 +9,11 @@ var line2Index = 0;
 var line3Index = 0;
 var line4Index = 0;
 var line5Index = 0;
-var line1Arr = ["<span style='color: red ;'>|</span>"," ","H","E","L","L","O",","];
+var line1Arr = ["<span style='color: red ;'>|</span>"," ","H","E","L","L","O","<span style='font-weight: bold; color: red;'>,</span>"];
 var line2Arr = ["W","E","L","C","O","M","E"," ","<span style='color: blue;'>|</span>"];
 var line3Arr = ["<span style='color: blue;'>|</span>"," ","T","O"];
 var line4Arr = ["M","Y"," ","<span style='color: red ;'>|</span>"];
-var line5Arr = ["<span style='color: blue;'>|</span>"," ","P","O","R","T","F","O","L","I","O"];
+var line5Arr = ["<span style='color: blue;'>|</span>"," ","P","O","R","T","F","O","L","I","O","<span id='version'><span style='color: blue;'>v</span>.  1.0</span>"];
 var stop = false;
 
 
@@ -164,11 +164,11 @@ var jumble2Index = 0;
 var jumble3Index = 0;
 var jumble4Index = 0;
 var jumble5Index = 0;
-var jumble1Arr = "| LSA".split('');
-var jumble2Arr = "TGH |".split('');
-var jumble3Arr = "| KLESDMC |".split('');
-var jumble4Arr = "| Ipw.".split('');
-var jumble5Arr = "WIK |".split('');
+var jumble1Arr = "| RKUJH".split('');
+var jumble2Arr = "QLJ |".split('');
+var jumble3Arr = "| QSE |".split('');
+var jumble4Arr = "| GHIUJERF".split('');
+var jumble5Arr = "ZK |".split('');
 
 
 // -----1-------

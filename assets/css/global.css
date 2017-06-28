@@ -2,90 +2,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 #site-wrapper {margin: 0; height: 100vh; width: 100vw; overflow: hidden}
 
 
-/*----------------------------------------------------------------*/
-/*------------------------Structure of Page-----------------------*/
-/*----------------------------------------------------------------*/
-
-.scene {
-  position: absolute;
-  top: 10vh;
-  width: 15vh;
-  height: 15vh;
-  margin: 0 auto 0;
-  perspective: 100vw;
-}
-
-.cube {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: transform .6s ease-in-out;
-  transform-style: preserve-3d;
-  transform: translateZ(100vw);
-}
-
-.wall {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: visible;
-  transform-style: preserve-3d;
-  transition: transform 1s ease-in-out;
-}
-
-.top {
-  height: 100%;
-  width: 100%;
-  transform: translateZ(10vw;) rotateX(-90deg);
-  background-color: gray;
-}
-/*---------------------------------------------------------------------------------------*/
-
-
-.frame-master {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
-}
-
-/*--------------------------------------------------------------------------------------*/
-
-.under {
-  width: 60vw;
-  height: 80vh;
-  left: 20vw;
-  background-color: white;
-  box-shadow: inset 0 0 1vh 0;
-  position: absolute;
-}
-
-.over {
-  position: absolute;
-  height: 80vh;
-  width: 60vw;
-  left: 20vw;
-  background-color: ghostwhite;
-  transition: transform 1s ease-in-out, box-shadow .7s ease-out .8s;
-/*  border: .1px dotted lightgray;
-  border-top: none;*/
-}
-
-.over.up {
-  transition: transform 1s ease-in-out .5s, box-shadow .7s ease-in;
-}
-
-.over.slide {
-  transform: translateY(-76vh);
-  box-shadow: 0 0 1vh 0;
-}
-
-/*-------------------------------------------------------------------*/
-
 .contact-holder {
   position: absolute;
   height: 9vh;
   width: 100vw;
   text-align: center;
+  pointer-events: none;
+  font-weight: bold;
 }
 
 .contact-target {
@@ -93,7 +16,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   vertical-align: center;
   height: 9vh;
   position: relative;
-  width: 35px;
+  width: 20px;
   transition: width .5s ease-in-out;
 }
 
@@ -106,7 +29,13 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .contact-hover {
-  animation: shakeBlue 3s infinite;
+  position: absolute;
+  height: 9vh;
+  width: 12vw;
+  left: 44vw;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 .black {
@@ -114,7 +43,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .topNavAnimation {
-  width: 9.5%;
+  width: 13%;
 }
 
 .red {
@@ -134,86 +63,25 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .c1 {
-  transition-delay: .4s;
+  transition-delay: .0s;
 }
 .c2 {
-  transition-delay: .3s;
+  transition-delay: .05s;
 }
 .c3 {
-  transition-delay: .2s;
+  transition-delay: .1s;
 }
 .c4 {
-  transition-delay: .1s;
+  transition-delay: .15s;
 }
 .c5 {
-  transition-delay: 0;
-}
-.c6 {
-  transition-delay: 0;
-}
-.c7 {
   transition-delay: .1s;
 }
-.c8 {
-  transition-delay: .2s;
+.c6 {
+  transition-delay: .05s;
 }
-.c9 {
-  transition-delay: .3s;
-}
-.c10 {
-  transition-delay: .4s;
-}
-
-.social-holder {
-  width: 100%;
-  text-align: center;
-  position: relative;
-  font-size: 3vh;
-  z-index: 10;
-}
-
-.social-label-black {
-  letter-spacing: .4vw;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  transition: letter-spacing .3s ease-in-out;
-}
-
-.shake-black {
-  letter-spacing: 3vw;
-}
-
-.social-label-red {
-  letter-spacing: .4vw;
-  position: absolute;
-  width: 100%;
-  color: red;
-  opacity: .4;
-  transition: letter-spacing .3s ease-in-out;
-}
-
-.shake-red {
-  animation: shakeRed 3s infinite;
-  letter-spacing: 3vw;
-}
-
-.social-label-blue {
-  letter-spacing: .4vw;
-  position: absolute;
-  width: 100%;
-  color: blue;
-  opacity: .4;
-  transition: letter-spacing .3s ease-in-out;
-}
-
-.shake-blue {
-  animation: shakeBlue 3s infinite;
-  letter-spacing: 3vw;
-}
-
-.social-letters {
-  padding-top: 3vh;
+.c7 {
+  transition-delay: .0s;
 }
 
 @keyframes shakeRed {
@@ -471,33 +339,3 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     transform: translate(1px,1px);
   }
 }
-
-
-
-/*.bottomTest {
-  height: 9vh;
-  width: 100vw;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 8;
-}
-.leftTest {
-  height: 100vh;
-  width: 10vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 8;
-}
-.rightTest {
-  height: 100vh;
-  width: 10vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 8;
-}*/

@@ -10,7 +10,7 @@
     top: 25vh;
   /*  height: 23vh;
     width: 40vw;*/
-    border: 7px double rgba(0,0,255,.7);
+    border: 4px double rgba(0,0,255,1);
     border-bottom: none;
     border-left: none;
     pointer-events: none;
@@ -22,7 +22,7 @@
     bottom: 25vh;
   /*  height: 23vh;
     width: 40vw;*/
-    border: 7px double rgba(255,0,0,.7);
+    border: 4px double rgba(255,0,0,1);
     border-top: none;
     border-right: none;
     pointer-events: none;
@@ -38,11 +38,11 @@
 }
 
 .borders-top.show1.show2 {
-  height: 23vh;
+  height: 26vh;
 }
 
 .borders-bottom.show1 {
-  height: 23vh;
+  height: 26vh;
 }
 
 .borders-bottom.show1.show2 {
@@ -129,20 +129,20 @@
 
 .right.jumble-3 {
   position: absolute;
-  left: 121px;
-  top: 89px;
+  left: 101px;
+  top: 91px;
 }
 
 .right.jumble-4 {
   position: absolute;
-  left: 90px;
-  top: 139px;
+  left: 68px;
+  top: 137px;
 }
 
 .right.jumble-5 {
   position: absolute;
-  left: 163px;
-  top: 152px;
+  left: 154px;
+  top: 159px;
 }
 
 .right.sorted-1 {
@@ -161,22 +161,22 @@
 
 .right.sorted-3 {
   position: absolute;
-  left: 123px;
+  left: 101px;
   top: 91px;
   opacity: 0;
 }
 
 .right.sorted-4 {
   position: absolute;
-  left: 92px;
-  top: 141px;
+  left: 68px;
+  top: 137px;
   opacity: 0;
 }
 
 .right.sorted-5 {
   position: absolute;
-  left: 165px;
-  top: 154px;
+  left: 154px;
+  top: 159px;
   opacity: 0;
 }
 
@@ -443,4 +443,9 @@
   100% {
     opacity: 1;
   }
+}
+
+#version {
+  font-size: 14px;
+  letter-spacing: 0px;
 }
