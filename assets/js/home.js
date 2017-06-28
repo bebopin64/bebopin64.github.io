@@ -300,11 +300,9 @@ function jumble5letters() {
 			$(".sorted-3").addClass("addToSorted");
 			$(".sorted-4").addClass("addToSorted");
 			$(".sorted-5").addClass("addToSorted");
-		}, 1000);
+		}, 600);
 		setTimeout(function() {
 		}, 1500);
-		setTimeout(function() {
-		}, 10000);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble5letters();}, 40);

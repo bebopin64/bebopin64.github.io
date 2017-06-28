@@ -1,4 +1,8 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+}
 #site-wrapper {margin: 0; height: 100vh; width: 100vw; overflow: hidden}
 
 
@@ -42,8 +46,8 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   z-index: 1;
 }
 
-.topNavAnimation {
-  width: 13%;
+.contactAnimation {
+  width: 13vw;
 }
 
 .red {
@@ -51,7 +55,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .red-shake {
-  animation: shakeRed 6s infinite;
+  animation: shakeRed 1.5s infinite;
+}
+
+.red-shake-interval {
+  animation: shakeRed 1s 1;
 }
 
 .blue {
@@ -59,7 +67,11 @@ html, body {margin: 0; height: 100%; overflow: hidden}
 }
 
 .blue-shake {
-  animation: shakeBlue 6s infinite;
+  animation: shakeBlue 1.5s infinite;
+}
+
+.blue-shake-interval {
+  animation: shakeBlue 1s 1;
 }
 
 .c1 {
@@ -81,6 +93,197 @@ html, body {margin: 0; height: 100%; overflow: hidden}
   transition-delay: .05s;
 }
 .c7 {
+  transition-delay: .0s;
+}
+
+/*-----END CONTACT-------*/
+
+.work-holder {
+  position: absolute;
+  height: 9vh;
+  width: 100vw;
+  left: calc(50vw - 4.5vh);
+  top: 45.5vh;
+  text-align: center;
+  pointer-events: none;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+.work-target {
+  display: inline-block;
+  vertical-align: center;
+  height: 9vh;
+  position: relative;
+  width: 20px;
+  transition: width .5s ease-in-out;
+}
+
+.work-target.W {
+  margin-right: 5px;
+}
+
+.work-target div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+  padding-top: calc(4.5vh - 14px);
+}
+
+.work-hover {
+  position: absolute;
+  height: 9vh;
+  width: 12vw;
+  left: 44vw;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.black {
+  z-index: 1;
+}
+
+.workAnimation {
+  width: 24vh;
+}
+
+.red {
+  color: red;
+}
+
+.red-shake {
+  animation: shakeRed 1.5s infinite;
+}
+
+.red-shake-interval {
+  animation: shakeRed .15s 1;
+}
+
+.blue {
+  color: blue;
+}
+
+.blue-shake {
+  animation: shakeBlue 1.5s infinite;
+}
+
+.blue-shake-interval {
+  animation: shakeBlue .15s 1;
+}
+
+.w1 {
+  transition-delay: .0s;
+}
+.w2 {
+  transition-delay: .1s;
+}
+.w3 {
+  transition-delay: .1s;
+}
+.w4 {
+  transition-delay: .0s;
+}
+.w5 {
+  transition-delay: .1s;
+}
+.w6 {
+  transition-delay: .05s;
+}
+.w7 {
+  transition-delay: .0s;
+}
+
+/*END WORK*/
+
+.about-holder {
+  position: absolute;
+  height: 9vh;
+  width: 100vw;
+  left: calc(-50vw + 4.5vh);
+  top: 45.5vh;
+  text-align: center;
+  pointer-events: none;
+  font-weight: bold;
+  transform: rotate(-90deg);
+}
+
+.about-target {
+  display: inline-block;
+  vertical-align: center;
+  height: 9vh;
+  position: relative;
+  width: 20px;
+  transition: width .5s ease-in-out;
+}
+
+.about-target.W {
+}
+
+.about-target div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  font-size: 28px;
+  padding-top: calc(4.5vh - 14px);
+}
+
+.about-hover {
+  position: absolute;
+  height: 9vh;
+  width: 12vw;
+  left: 44vw;
+  z-index: 2;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.black {
+  z-index: 1;
+}
+
+.aboutAnimation {
+  width: 19vh;
+}
+
+.red {
+  color: red;
+}
+
+.red-shake {
+  animation: shakeRed 1.5s infinite;
+}
+
+.red-shake-interval {
+  animation: shakeRed 1s 1;
+}
+
+.blue {
+  color: blue;
+}
+
+.blue-shake {
+  animation: shakeBlue 1.5s infinite;
+}
+
+.blue-shake-interval {
+  animation: shakeBlue 1s 1;
+}
+
+.w1 {
+  transition-delay: .0s;
+}
+.w2 {
+  transition-delay: .05s;
+}
+.w3 {
+  transition-delay: .1s;
+}
+.w4 {
+  transition-delay: .05s;
+}
+.w5 {
   transition-delay: .0s;
 }
 
