@@ -58,23 +58,4 @@ function shakeInterval() {
 	setTimeout(function() {stopGlitch();}, length);
 	setTimeout(function() {shakeInterval();}, time);
 }
-
 setTimeout(function() {shakeInterval();}, 5500);
-
-// SOCIAL BUTTON ANIMATIONS
-
-$(".github").hover(function() {
-	$(".github").addClass("scale");
-}, function() {
-	$(".github").removeClass("scale");
-});
-$(".linkedin").hover(function() {
-	$(".linkedin").addClass("scale");
-}, function() {
-	$(".linkedin").removeClass("scale");
-});
-$(".facebook").hover(function() {
-	$(".facebook").addClass("scale");
-}, function() {
-	$(".facebook").removeClass("scale");
-});

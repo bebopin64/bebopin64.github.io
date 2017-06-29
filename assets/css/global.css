@@ -59,6 +59,10 @@ html, body {
   cursor: pointer;
 }
 
+.github:hover {
+  transform: scale(1.1);
+}
+
 .linkedin {
   background-image: url(../images/linkedin.svg);
   background-size: 100% 100%;
@@ -66,11 +70,19 @@ html, body {
   cursor: pointer;
 }
 
+.linkedin:hover {
+  transform: scale(1.1);
+}
+
 .facebook {
   background-image: url(../images/facebook.svg);
   background-size: 100% 100%;
   right: 0;
   cursor: pointer;
+}
+
+.facebook:hover {
+  transform: scale(1.1);
 }
 
 .scale {
