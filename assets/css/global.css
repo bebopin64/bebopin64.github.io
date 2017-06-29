@@ -5,6 +5,53 @@ html, body {
 }
 #site-wrapper {margin: 0; height: 100vh; width: 100vw; overflow: hidden}
 
+.clear {
+  opacity: 0;
+}
+
+.social-container {
+  position: fixed;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  left: calc(50vw - 125px);
+  top: calc(88vh - 25px);
+}
+
+.social-container div {
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  transition: transform .2s ease-in;
+}
+
+.github {
+  background-image: url(../images/github.svg);
+  background-size: 100% 100%;
+  left: 0;
+  cursor: pointer;
+}
+
+.linkedin {
+  background-image: url(../images/linkedin.svg);
+  background-size: 100% 100%;
+  left: calc(50% - 25px);
+  cursor: pointer;
+}
+
+.facebook {
+  background-image: url(../images/facebook.svg);
+  background-size: 100% 100%;
+  right: 0;
+  cursor: pointer;
+}
+
+.scale {
+  transform: scale(1.2);
+}
+
+/*NAVBUTTONS*/
 
 .contact-holder {
   position: absolute;
@@ -47,7 +94,7 @@ html, body {
 }
 
 .contactAnimation {
-  width: 13vw;
+  width: 14vw;
 }
 
 .red {
@@ -183,15 +230,6 @@ html, body {
   transition-delay: .1s;
 }
 .w4 {
-  transition-delay: .0s;
-}
-.w5 {
-  transition-delay: .1s;
-}
-.w6 {
-  transition-delay: .05s;
-}
-.w7 {
   transition-delay: .0s;
 }
 

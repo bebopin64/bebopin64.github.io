@@ -65,3 +65,21 @@ function shakeInterval() {
 }
 
 setTimeout(function() {shakeInterval();}, 5000);
+
+// SOCIAL BUTTON ANIMATIONS
+
+$(".github").hover(function() {
+	$(".github").addClass("scale");
+}, function() {
+	$(".github").removeClass("scale");
+});
+$(".linkedin").hover(function() {
+	$(".linkedin").addClass("scale");
+}, function() {
+	$(".linkedin").removeClass("scale");
+});
+$(".facebook").hover(function() {
+	$(".facebook").addClass("scale");
+}, function() {
+	$(".facebook").removeClass("scale");
+});
