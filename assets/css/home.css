@@ -135,13 +135,13 @@
 
 .right.jumble-4 {
   position: absolute;
-  left: 68px;
+  left: 83px;
   top: 137px;
 }
 
 .right.jumble-5 {
   position: absolute;
-  left: 154px;
+  left: 169px;
   top: 159px;
 }
 
@@ -168,14 +168,14 @@
 
 .right.sorted-4 {
   position: absolute;
-  left: 68px;
+  left: 83px;
   top: 137px;
   opacity: 0;
 }
 
 .right.sorted-5 {
   position: absolute;
-  left: 154px;
+  left: 169px;
   top: 159px;
   opacity: 0;
 }
