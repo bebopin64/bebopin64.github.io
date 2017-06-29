@@ -11,8 +11,12 @@ function updateView(xAngle, yAngle) {
 	$(".logo-cont").css({
 		'transform': transform
 	});
-	var bgtransform = "translateX(" + yAngle*.5 + "vw) translateY(" + -xAngle*.5 + "vh) scale(1.1)";
+	var bgtransform = "translateX(" + -yAngle*.7 + "vw) translateY(" + xAngle*.7 + "vh) scale(1.1)";
 	$(".page-background").css({
 		'transform': bgtransform
+	});
+	var bgtransform2 = "translateX(" + yAngle*.7 + "vw) translateY(" + -xAngle*.7 + "vh) scale(1.1)";
+	$(".page-background2").css({
+		'transform': bgtransform2
 	});
 }
