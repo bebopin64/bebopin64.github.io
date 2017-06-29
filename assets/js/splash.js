@@ -38,7 +38,7 @@ window.onload = function() {
 for (var i=0;i<100;i++) {
 	var time = Math.random()/5 + .8;
 	$(".splash-cont").append(
-		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform "+time+"s cubic-bezier(.7,0,1,.6);'></div>"
+		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform 1s ease-in-out;'></div>"
 	);
 	if (i === 99) {		
 		welcome();
@@ -93,7 +93,7 @@ function splashSlide() {
 		fellArr.push(row);
 		$(target).addClass("slideDown");
 	} else {
-		setTimeout(function() {splashSlide();}, 10);
+		setTimeout(function() {splashSlide();}, 500);
 	}
 	if (fellArr.length < 100) {
 		setTimeout(function() {splashSlide();}, 1);
