@@ -105,20 +105,12 @@ html, body {
   animation: shakeRed 1.5s infinite;
 }
 
-.red-shake-interval {
-  animation: shakeRed 1s 1;
-}
-
 .blue {
   color: blue;
 }
 
 .blue-shake {
   animation: shakeBlue 1.5s infinite;
-}
-
-.blue-shake-interval {
-  animation: shakeBlue 1s 1;
 }
 
 .c1 {
@@ -204,20 +196,12 @@ html, body {
   animation: shakeRed 1.5s infinite;
 }
 
-.red-shake-interval {
-  animation: shakeRed .15s 1;
-}
-
 .blue {
   color: blue;
 }
 
 .blue-shake {
   animation: shakeBlue 1.5s infinite;
-}
-
-.blue-shake-interval {
-  animation: shakeBlue .15s 1;
 }
 
 .w1 {
@@ -293,10 +277,6 @@ html, body {
   animation: shakeRed 1.5s infinite;
 }
 
-.red-shake-interval {
-  animation: shakeRed 1s 1;
-}
-
 .blue {
   color: blue;
 }
@@ -305,8 +285,12 @@ html, body {
   animation: shakeBlue 1.5s infinite;
 }
 
+.red-shake-interval {
+  animation: shakeRed 1s infinite;
+}
+
 .blue-shake-interval {
-  animation: shakeBlue 1s 1;
+  animation: shakeBlue 1s infinite;
 }
 
 .w1 {

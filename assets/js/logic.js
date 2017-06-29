@@ -31,40 +31,35 @@ $(".about-hover").hover(function() {
 	$(".about-target").removeClass("aboutAnimation");
 });
 
-// function to randomly animate a nav button occasionally
+// randomly animate a nav button occasionally
 
-function shakeInterval() {
-	var i = Math.floor(Math.random()*4);
-	if (i < 1) {
-		$(".WR").addClass("red-shake-interval");
-		$(".WB").addClass("blue-shake-interval");
-		setTimeout(function() {
-			$(".WR").removeClass("red-shake-interval");
-			$(".WB").removeClass("blue-shake-interval");
-			shakeInterval();
-		}, 2500);
-	} else if (i < 2) {
-		$(".CR").addClass("red-shake-interval");
-		$(".CB").addClass("blue-shake-interval");
-		setTimeout(function() {
-			$(".CR").removeClass("red-shake-interval");
-			$(".CB").removeClass("blue-shake-interval");
-			shakeInterval();
-		}, 2500);
-	} else if (i < 3) {
-		$(".AR").addClass("red-shake-interval");
-		$(".AB").addClass("blue-shake-interval");
-		setTimeout(function() {
-			$(".AR").removeClass("red-shake-interval");
-			$(".AB").removeClass("blue-shake-interval");
-			shakeInterval();
-		}, 2500);
-	} else {
-		setTimeout(function() {setInterval();}, 2500);
-	}
+function addGlitch() {
+	$(".WR").addClass("red-shake-interval");
+	$(".WB").addClass("blue-shake-interval");
+	$(".CR").addClass("red-shake-interval");
+	$(".CB").addClass("blue-shake-interval");
+	$(".AR").addClass("red-shake-interval");
+	$(".AB").addClass("blue-shake-interval");	
 }
 
-setTimeout(function() {shakeInterval();}, 5000);
+function stopGlitch() {
+	$(".WR").removeClass("red-shake-interval");
+	$(".WB").removeClass("blue-shake-interval");
+	$(".CR").removeClass("red-shake-interval");
+	$(".CB").removeClass("blue-shake-interval");
+	$(".AR").removeClass("red-shake-interval");
+	$(".AB").removeClass("blue-shake-interval");
+}
+
+function shakeInterval() {
+	var length = Math.random()*500;
+	var time = Math.random()*5000;
+	addGlitch();
+	setTimeout(function() {stopGlitch();}, length);
+	setTimeout(function() {shakeInterval();}, time);
+}
+
+setTimeout(function() {shakeInterval();}, 5500);
 
 // SOCIAL BUTTON ANIMATIONS
 
