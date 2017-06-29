@@ -113,27 +113,7 @@ html, body {
   animation: shakeBlue 1.5s infinite;
 }
 
-.c1 {
-  transition-delay: .0s;
-}
-.c2 {
-  transition-delay: .05s;
-}
-.c3 {
-  transition-delay: .1s;
-}
-.c4 {
-  transition-delay: .15s;
-}
-.c5 {
-  transition-delay: .1s;
-}
-.c6 {
-  transition-delay: .05s;
-}
-.c7 {
-  transition-delay: .0s;
-}
+
 
 /*-----END CONTACT-------*/
 
@@ -204,18 +184,7 @@ html, body {
   animation: shakeBlue 1.5s infinite;
 }
 
-.w1 {
-  transition-delay: .0s;
-}
-.w2 {
-  transition-delay: .1s;
-}
-.w3 {
-  transition-delay: .1s;
-}
-.w4 {
-  transition-delay: .0s;
-}
+
 
 /*END WORK*/
 
@@ -293,21 +262,7 @@ html, body {
   animation: shakeBlue 1s infinite;
 }
 
-.w1 {
-  transition-delay: .0s;
-}
-.w2 {
-  transition-delay: .05s;
-}
-.w3 {
-  transition-delay: .1s;
-}
-.w4 {
-  transition-delay: .05s;
-}
-.w5 {
-  transition-delay: .0s;
-}
+
 
 @keyframes shakeRed {
   0% {
