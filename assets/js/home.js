@@ -9,11 +9,11 @@ var line2Index = 0;
 var line3Index = 0;
 var line4Index = 0;
 var line5Index = 0;
-var line1Arr = ["<span style='color: red ;'>|</span>"," ","H","E","L","L","O","<span style='font-weight: bold; color: red;'>,</span>"];
-var line2Arr = ["W","E","L","C","O","M","E"," ","<span style='color: blue;'>|</span>"];
-var line3Arr = ["<span style='color: blue;'>|</span>"," ","T","O"];
-var line4Arr = ["M","Y"," ","<span style='color: red ;'>|</span>"];
-var line5Arr = ["<span style='color: blue;'>|</span>"," ","P","O","R","T","F","O","L","I","O","<span id='version'><span style='color: blue;'>v</span>.  1.0</span>"];
+var line1Arr = [" ","H","E","L","L","O","<span style='font-weight: bold;'>,</span>"];
+var line2Arr = ["W","E","L","C","O","M","E"," "];
+var line3Arr = [" ","T","O"];
+var line4Arr = ["M","Y"," "];
+var line5Arr = [" ","P","O","R","T","F","O","L","I","O","<span id='version'><span style='color: blue;'>v</span>.  1.0</span>"];
 var stop = false;
 
 
@@ -22,7 +22,7 @@ var stop = false;
 function line1letters() {
 	var temp = "";
 	if (line1.length > 0) {
-		for (j=0;j < (line1Arr.length - (line1.length - 34));j++) {
+		for (j=0;j < (line1Arr.length - line1.length);j++) {
 			temp += lettersArr[Math.floor(Math.random()*26)];
 		}
 	} else {
@@ -78,7 +78,7 @@ function line2word() {
 
 function line3letters() {
 	var temp = "";
-	for (j=0;j < (line3Arr.length - (line3.length - 34));j++) {
+	for (j=0;j < (line3Arr.length - (line3.length - 0));j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-3").html(line3 + temp);
@@ -130,7 +130,7 @@ function line4word() {
 
 function line5letters() {
 	var temp = "";
-	for (j=0;j < (line5Arr.length - (line5.length - 34));j++) {
+	for (j=0;j < (line5Arr.length - line5.length);j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".line-5").html(line5 + temp);
@@ -166,11 +166,11 @@ var jumble2Index = 0;
 var jumble3Index = 0;
 var jumble4Index = 0;
 var jumble5Index = 0;
-var jumble1Arr = "| RKUJH".split('');
-var jumble2Arr = "QLJ |".split('');
-var jumble3Arr = "| QSE |".split('');
-var jumble4Arr = "| GHIUJERF".split('');
-var jumble5Arr = "ZK |".split('');
+var jumble1Arr = "RKUJH".split('');
+var jumble2Arr = "QLJ".split('');
+var jumble3Arr = "QSE".split('');
+var jumble4Arr = "GHIUJERF".split('');
+var jumble5Arr = "ZK".split('');
 
 
 // -----1-------
@@ -281,7 +281,7 @@ function jumble4word() {
 
 function jumble5letters() {
 	var temp = "";
-	for (j=0;j < ((jumble5Arr.length - jumble5.length)-1);j++) {
+	for (j=0;j < ((jumble5Arr.length - jumble5.length));j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-5").html(jumble5 + temp);
