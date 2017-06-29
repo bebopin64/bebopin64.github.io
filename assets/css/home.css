@@ -28,25 +28,20 @@
     pointer-events: none;
 }
 
-.borders.show {
-  height: 23vh;
-  width: 40vw;
-}
-
 .borders-top.show1 {
-  width: 40vw;
+  width: calc(53vw - 160px);
 }
 
 .borders-top.show1.show2 {
-  height: 26vh;
+  height: calc(42vh - 100px);
 }
 
 .borders-bottom.show1 {
-  height: 26vh;
+  height: calc(42vh - 100px);
 }
 
 .borders-bottom.show1.show2 {
-  width: 40vw;
+  width: calc(53vw - 160px);
 }
 
 
@@ -105,8 +100,8 @@
   width: 320px;
   position: absolute;
   pointer-events: none;
-  left: calc(75% - 160px);
-  top: calc(70% - 100px);
+  right: calc(25% - 160px);
+  bottom: calc(30% - 100px);
 }
 
 .home-right-content div {
@@ -129,7 +124,7 @@
 
 .right.jumble-3 {
   position: absolute;
-  left: 71px;
+  left: 93px;
   top: 91px;
 }
 
@@ -141,7 +136,7 @@
 
 .right.jumble-5 {
   position: absolute;
-  left: 169px;
+  left: 200px;
   top: 159px;
 }
 
@@ -161,7 +156,7 @@
 
 .right.sorted-3 {
   position: absolute;
-  left: 71px;
+  left: 93px;
   top: 91px;
   opacity: 0;
 }
@@ -175,7 +170,7 @@
 
 .right.sorted-5 {
   position: absolute;
-  left: 169px;
+  left: 200px;
   top: 159px;
   opacity: 0;
 }
