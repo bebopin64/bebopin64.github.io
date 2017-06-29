@@ -21,17 +21,8 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
-  transition: transform .19s linear;
+  transition: transform .23s linear;
   color: rgba(0,0,0,.16);
-}
-
-.logo-cont3 {
-  position: relative;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  transition: transform .22s linear;
-  color: rgba(0,0,0,.14);
 }
 
 .logo-cont4 {
@@ -39,17 +30,8 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
-  transition: transform .25s linear;
-  color: rgba(0,0,0,.12);
-}
-
-.logo-cont5 {
-  position: relative;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
   transition: transform .31s linear;
-  color: rgba(0,0,0,.11);
+  color: rgba(0,0,0,.12);
 }
 
 .logo-cont6 {
@@ -57,17 +39,8 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
-  transition: transform .37s linear;
+  transition: transform .45s linear;
   color: rgba(0,0,0,.09);
-}
-
-.logo-cont7 {
-  position: relative;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  transition: transform .43s linear;
-  color: rgba(0,0,0,.07);
 }
 
 .logo-cont8 {
@@ -75,17 +48,8 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
-  transition: transform .49s linear;
+  transition: transform .61s linear;
   color: rgba(0,0,0,.05);
-}
-
-.logo-cont9 {
-  position: relative;
-  transform-style: preserve-3d;
-  height: 100%;
-  width: 100%;
-  transition: transform .56s linear;
-  color: rgba(0,0,0,.03);
 }
 
 .logo-cont10 {
@@ -93,7 +57,7 @@
   transform-style: preserve-3d;
   height: 100%;
   width: 100%;
-  transition: transform .61s linear;
+  transition: transform .75s linear;
   color: rgba(0,0,0,.01);
 }
 
