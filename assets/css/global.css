@@ -49,7 +49,7 @@ html, body {
   display: inline-block;
   height: 50px;
   width: 50px;
-  transition: transform .2s ease-in;
+  transition: transform .2s ease-out;
 }
 
 .github {
