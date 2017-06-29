@@ -69,7 +69,6 @@ function flickerOut() {
 			splashSlide();
 			splashSlide();
 			splashSlide();
-			splashSlide();
 		}, 1500);
 		setTimeout(function() {
 			$(".splash").remove();
@@ -79,7 +78,7 @@ function flickerOut() {
 				line1letters(); 
 				line1word();
 			}, 800); 
-		}, 7000);
+		}, 3500);
 	}
 }
 
