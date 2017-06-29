@@ -20,7 +20,7 @@
 /*----------------------Animation Translations-----------------------*/
 
 .slideDown {
-	transform: translateY(400vh);
+	transform: translateY(100vh);
 }
 
 .slideLeft {

@@ -36,7 +36,7 @@ window.onload = function() {
 
 // --------------------Create Rows------------------------------
 for (var i=0;i<100;i++) {
-	var time = Math.random()/5 + 1.2;
+	var time = Math.random()/5 + .8;
 	$(".splash-cont").append(
 		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform "+time+"s cubic-bezier(.7,0,1,.6);'></div>"
 	);
@@ -65,7 +65,12 @@ function flickerOut() {
 	if (welcomeIndex < 7) {
 		setTimeout(function() {flickerOut();}, 50);
 	} else {
-		setTimeout(function() {fallLeft();}, 1500);
+		setTimeout(function() {
+			splashSlide();
+			splashSlide();
+			splashSlide();
+			splashSlide();
+		}, 1500);
 		setTimeout(function() {
 			$(".splash").remove();
 			 $(".borders-top").addClass("show1");
@@ -74,28 +79,23 @@ function flickerOut() {
 				line1letters(); 
 				line1word();
 			}, 800); 
-		}, 3000);
+		}, 7000);
 	}
 }
 
 // --------------------------Animate Rows off screen------------
-var left = 0;
-var right = 99;
+var fellArr = [];
 
-function fallLeft() {
-	var target = ".row" + left;
-	$(target).addClass("slideDown");
-	left++;
-	if (left < 100) {
-		fallLeft();
+function splashSlide() {
+	var row = Math.floor(Math.random()*100);
+	var target = ".row" + row;
+	if (fellArr.indexOf(row) < 0) {
+		fellArr.push(row);
+		$(target).addClass("slideDown");
+	} else {
+		setTimeout(function() {splashSlide();}, 10);
 	}
-}
-
-function fallRight() {
-	var target = ".row" + right;
-	$(target).addClass("slideDown");
-	right-=2;
-	if (right > 0) {
-		setTimeout(function() {fallRight();}, 1);
+	if (fellArr.length < 100) {
+		setTimeout(function() {splashSlide();}, 1);
 	}
 }
