@@ -6,7 +6,7 @@ html, body {
 #site-wrapper {margin: 0; height: 100vh; width: 100vw; overflow: hidden}
 
 .clear {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .page-background {
@@ -29,7 +29,7 @@ html, body {
   pointer-events: none;
   background-image: url(../images/test3N.png);
   background-size: 1600% 400%;
-  opacity: .5;
+  opacity: .6;
   transition: transform 1s linear, background-position 4s linear;
 }
 

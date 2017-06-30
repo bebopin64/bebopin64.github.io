@@ -27,7 +27,7 @@ function updateView(xAngle, yAngle) {
 var offset = 30;
 
 function animateBG() {
-	$(".page-background").css("background-position", offset/2 + "px 0px");
+	$(".page-background").css("background-position", -offset + "px 0px");
 	$(".page-background2").css("background-position", offset + "px 0px");
 	offset += 120;
 	setTimeout(function() {animateBG();}, 4000);
