@@ -41,7 +41,7 @@
 }
 
 .borders-bottom.show1.show2 {
-  width: calc(53vw - 160px);
+  width: calc(52vw - 160px);
 }
 
 
@@ -88,6 +88,10 @@
   position: absolute;
   left: 55px;
   top: 170px;
+}
+
+.left {
+  transition: opacity 1s linear;
 }
 
 
@@ -173,6 +177,10 @@
   left: 200px;
   top: 159px;
   opacity: 0;
+}
+
+.right {
+  transition: opacity 1s linear;
 }
 
 .addToJumble {

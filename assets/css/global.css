@@ -6,7 +6,7 @@ html, body {
 #site-wrapper {margin: 0; height: 100vh; width: 100vw; overflow: hidden}
 
 .clear {
-  opacity: 0;
+  opacity: 0 !important;
 }
 
 .page-background {
@@ -15,11 +15,10 @@ html, body {
   width: 100vw;
   z-index: -1000;
   pointer-events: none;
-  background-image: url(../images/test.png);
-  background-size: 100% 100%;
+  background-image: url(../images/testN.png);
+  background-size: 1600% 400%;
   opacity: 1;
-  transition: transform .49s linear;
-  transform: scale(1.1);
+  transition: transform 1s linear, background-position 4s linear;
 }
 
 .page-background2 {
@@ -28,11 +27,10 @@ html, body {
   width: 100vw;
   z-index: -1000;
   pointer-events: none;
-  background-image: url(../images/test3.png);
-  background-size: 100% 100%;
+  background-image: url(../images/test3N.png);
+  background-size: 1600% 400%;
   opacity: .5;
-  transition: transform .49s linear;
-  transform: scale(1.1);
+  transition: transform 1s linear, background-position 4s linear;
 }
 
 .social-container {
@@ -98,6 +96,7 @@ html, body {
   text-align: center;
   pointer-events: none;
   font-weight: bold;
+  transition: opacity 1s linear;
 }
 
 .contact-target {
@@ -165,6 +164,7 @@ html, body {
   pointer-events: none;
   font-weight: bold;
   transform: rotate(90deg);
+  transition: opacity 1s linear, transform 1s ease-in-out;
 }
 
 .work-target {
@@ -206,6 +206,14 @@ html, body {
   width: 24vh;
 }
 
+.workAnimationMove {
+  width: 24vh;
+}
+
+.workMove {
+  transform: rotate(90deg) translateY(calc(100vw - 9vh));
+}
+
 .red {
   color: red;
 }
@@ -214,11 +222,19 @@ html, body {
   animation: shakeRed 1.5s infinite;
 }
 
+.red-shake-move {
+  animation: shakeRed 1.5s infinite;
+}
+
 .blue {
   color: blue;
 }
 
 .blue-shake {
+  animation: shakeBlue 1.5s infinite;
+}
+
+.blue-shake-move {
   animation: shakeBlue 1.5s infinite;
 }
 
@@ -236,6 +252,7 @@ html, body {
   pointer-events: none;
   font-weight: bold;
   transform: rotate(-90deg);
+  transition: opacity 1s linear;
 }
 
 .about-target {

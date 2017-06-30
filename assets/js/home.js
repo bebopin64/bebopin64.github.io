@@ -166,23 +166,27 @@ var jumble2Index = 0;
 var jumble3Index = 0;
 var jumble4Index = 0;
 var jumble5Index = 0;
-var jumble1Arr = "RKUJH".split('');
-var jumble2Arr = "QLJ".split('');
-var jumble3Arr = "QSE".split('');
-var jumble4Arr = "GHIUJERF".split('');
-var jumble5Arr = "ZK".split('');
+var jumble1Arr = "THANK".split('');
+var jumble2Arr = "YOU".split('');
+var jumble3Arr = "FOR".split('');
+var jumble4Arr = "STOPPING".split('');
+var jumble5Arr = "BY".split('');
 
 
 // -----1-------
 
 function jumble1letters() {
 	var temp = "";
-	for (j=0;j < (jumble1Arr.length - jumble1.length);j++) {
-		temp += lettersArr[Math.floor(Math.random()*26)];
+	if (jumble1.length > 0) {
+		for (j=0;j < (jumble1Arr.length - jumble1.length);j++) {
+			temp += lettersArr[Math.floor(Math.random()*26)];
+		}
+	} else {
+		setTimeout(function() {jumble1letters();}, 10);
 	}
 	$(".jumble-1").html(jumble1 + temp);
-	if (jumble1Arr.length === jumble1.length) {
-		setTimeout(function() {jumble2letters();}, 40);
+	if (temp === "") {
+		return;
 	} else {
 		temp = "";
 		setTimeout(function() {jumble1letters();}, 40);
@@ -193,7 +197,8 @@ function jumble1word() {
 	jumble1 += jumble1Arr[jumble1Index];
 	jumble1Index++;
 	if (jumble1Index === jumble1Arr.length) {
-		setTimeout(function() {jumble2word();}, 70);
+		setTimeout(function() {jumble2word();}, 240);
+		setTimeout(function() {jumble2letters();}, 240);
 	} else {
 		setTimeout(function() {jumble1word();}, 70);
 	}
@@ -203,12 +208,11 @@ function jumble1word() {
 
 function jumble2letters() {
 	var temp = "";
-	for (j=0;j < (jumble2Arr.length - jumble2.length);j++) {
+	for (j=0;j < (jumble2Arr.length - (jumble2.length - 0));j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-2").html(jumble2 + temp);
 	if (temp === "") {
-		setTimeout(function() {jumble3letters();}, 40);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble2letters();}, 40);
@@ -219,7 +223,8 @@ function jumble2word() {
 	jumble2 += jumble2Arr[jumble2Index];
 	jumble2Index++;
 	if (jumble2Index === jumble2Arr.length) {
-		setTimeout(function() {jumble3word();}, 70);
+		setTimeout(function() {jumble3word();}, 40);
+		setTimeout(function() {jumble3letters();}, 40);
 	} else {
 		setTimeout(function() {jumble2word();}, 70);
 	}
@@ -229,12 +234,11 @@ function jumble2word() {
 
 function jumble3letters() {
 	var temp = "";
-	for (j=0;j < (jumble3Arr.length - jumble3.length);j++) {
+	for (j=0;j < (jumble3Arr.length - (jumble3.length - 0));j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-3").html(jumble3 + temp);
 	if (temp === "") {
-		setTimeout(function() {jumble4letters();}, 40);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble3letters();}, 40);
@@ -245,7 +249,8 @@ function jumble3word() {
 	jumble3 += jumble3Arr[jumble3Index];
 	jumble3Index++;
 	if (jumble3Index === jumble3Arr.length) {
-		setTimeout(function() {jumble4word();}, 70);
+		setTimeout(function() {jumble4word();}, 40);
+		setTimeout(function() {jumble4letters();}, 40);
 	} else {
 		setTimeout(function() {jumble3word();}, 70);
 	}
@@ -255,12 +260,11 @@ function jumble3word() {
 
 function jumble4letters() {
 	var temp = "";
-	for (j=0;j < (jumble4Arr.length - jumble4.length);j++) {
+	for (j=0;j < (jumble4Arr.length - (jumble4.length));j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-4").html(jumble4 + temp);
 	if (temp === "") {
-		setTimeout(function() {jumble5letters();}, 40);
 	} else {
 		temp = "";
 		setTimeout(function() {jumble4letters();}, 40);
@@ -271,7 +275,8 @@ function jumble4word() {
 	jumble4 += jumble4Arr[jumble4Index];
 	jumble4Index++;
 	if (jumble4Index === jumble4Arr.length) {
-		setTimeout(function() {stop = true;}, 700);
+		setTimeout(function() {jumble5word();}, 40);
+		setTimeout(function() {jumble5letters();}, 40);
 	} else {
 		setTimeout(function() {jumble4word();}, 70);
 	}
@@ -281,26 +286,11 @@ function jumble4word() {
 
 function jumble5letters() {
 	var temp = "";
-	for (j=0;j < ((jumble5Arr.length - jumble5.length));j++) {
+	for (j=0;j < (jumble5Arr.length - jumble5.length);j++) {
 		temp += lettersArr[Math.floor(Math.random()*26)];
 	}
 	$(".jumble-5").html(jumble5 + temp);
-	if (stop) {
-		stop = false;
-		temp = "";
-		jumble5letters();
-		setTimeout(function() {
-			$(".jumble-1").addClass("addToJumble");
-			$(".jumble-2").addClass("addToJumble");
-			$(".jumble-3").addClass("addToJumble");
-			$(".jumble-4").addClass("addToJumble");
-			$(".jumble-5").addClass("addToJumble");
-			$(".sorted-1").addClass("addToSorted");
-			$(".sorted-2").addClass("addToSorted");
-			$(".sorted-3").addClass("addToSorted");
-			$(".sorted-4").addClass("addToSorted");
-			$(".sorted-5").addClass("addToSorted");
-		}, 450);
+	if (temp === "") {
 	} else {
 		temp = "";
 		setTimeout(function() {jumble5letters();}, 40);
@@ -311,8 +301,13 @@ function jumble5word() {
 	jumble5 += jumble5Arr[jumble5Index];
 	jumble5Index++;
 	if (jumble5Index === jumble5Arr.length) {
-		return;
+			 $(".borders-top").addClass("show2");
+			 $(".borders-bottom").addClass("show2");
+		setTimeout(function() {
+			jumble1letters(); 
+			jumble1word();
+		}, 800); 
 	} else {
-		setTimeout(function() {jumble5word();}, 80);
+		setTimeout(function() {jumble5word();}, 70);
 	}
 }
