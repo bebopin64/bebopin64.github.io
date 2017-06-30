@@ -14,22 +14,24 @@ function updateView(xAngle, yAngle) {
 	$(".logo-cont").css({
 		'transform': transform
 	});
-	var bgtransform = "translateX(" + -yAngle*2.5 + "vw) translateY(" + xAngle*2.5 + "vh) scale(2)";
-	$(".page-background").css({
-		'transform': bgtransform
-	});
-	var bgtransform2 = "translateX(" + yAngle*2.5 + "vw) translateY(" + -xAngle*2.5 + "vh) scale(2)";
-	$(".page-background2").css({
-		'transform': bgtransform2
-	});
+	// var bgtransform = "translateX(" + -yAngle*2.5 + "vw) translateY(" + xAngle*2.5 + "vh) scale(2)";
+	// $(".page-background").css({
+	// 	'transform': bgtransform
+	// });
+	// var bgtransform2 = "translateX(" + yAngle*2.5 + "vw) translateY(" + -xAngle*2.5 + "vh) scale(2)";
+	// $(".page-background2").css({
+	// 	'transform': bgtransform2
+	// });
 }
 
-var offset = 30;
+var offset = 0;
 
 function animateBG() {
-	$(".page-background").css("background-position", -offset + "px 0px");
-	$(".page-background2").css("background-position", offset + "px 0px");
-	offset += 120;
-	setTimeout(function() {animateBG();}, 4000);
+	$(".page-background").css("background-position", -offset*2 + "px 0px");
+	$(".page-background2").css("background-position", offset*3 + "px 0px");
+	offset += 1;
+	setTimeout(function() {animateBG();}, 100);
 }
+setTimeout(function() {animateBG();}, 6000);
+
 

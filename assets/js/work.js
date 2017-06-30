@@ -11,6 +11,7 @@ $(".work-hover").on('click', function() {
 		$(".WR").removeClass("red-shake-move");
 		$(".WB").removeClass("blue-shake-move");
 		$(".work-target").removeClass("workAnimationMove");
+		$(".work-target").removeClass("workAnimation");
 		moveWorkRight();
 		$(".work-holder").addClass("workMove");
 	}, 1400);
