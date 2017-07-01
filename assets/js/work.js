@@ -3,13 +3,13 @@ $(".work-hover").on('click', function() {
 	// $(".WB").addClass("blue-shake-move");
 	$(".work-target").addClass("workAnimationMove");
 	moveWorkLeft();
-	$(".about-holder").addClass("clear");
-	$(".contact-holder").addClass("clear");
-	$(".right").addClass("clear");
-	$(".left").addClass("clear");
+	$(".about-holder").toggleClass("clear");
+	$(".contact-holder").toggleClass("clear");
+	$(".right").toggleClass("clear");
+	$(".left").toggleClass("clear");
 	setTimeout(function() {
-		$(".WR").removeClass("red-shake-move");
-		$(".WB").removeClass("blue-shake-move");
+		// $(".WR").removeClass("red-shake-move");
+		// $(".WB").removeClass("blue-shake-move");
 		$(".work-target").removeClass("workAnimationMove");
 		$(".work-target").removeClass("workAnimation");
 		moveWorkRight();

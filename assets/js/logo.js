@@ -32,6 +32,6 @@ function animateBG() {
 	offset += 1;
 	setTimeout(function() {animateBG();}, 100);
 }
-setTimeout(function() {animateBG();}, 6000);
+// setTimeout(function() {animateBG();}, 6000);
 
 
