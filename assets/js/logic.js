@@ -1,34 +1,26 @@
 // NAV CONTACT NAC CONTACT NAC CONTACT
+function navInit() {
+	$(".contact-hover").hover(function() {
+		$(".contact-target").addClass("contactAnimation");
+	}, function() {
+		$(".contact-target").removeClass("contactAnimation");
+	});
+	$(".work-hover").hover(function() {
+		$(".work-target").addClass("workAnimation");
+	}, function() {
+		$(".work-target").removeClass("workAnimation");
+	});
 
-$(".contact-hover").hover(function() {
-	// $(".CR").addClass("red-shake");
-	// $(".CB").addClass("blue-shake");
-	$(".contact-target").addClass("contactAnimation");
-}, function() {
-	// $(".CR").removeClass("red-shake");
-	// $(".CB").removeClass("blue-shake");
-	$(".contact-target").removeClass("contactAnimation");
-});
+	$(".about-hover").hover(function() {
+		$(".about-target").addClass("aboutAnimation");
+	}, function() {
+		$(".about-target").removeClass("aboutAnimation");
+	});
+}
 
-
-$(".work-hover").hover(function() {
-	// $(".WR").addClass("red-shake");
-	// $(".WB").addClass("blue-shake");
-	$(".work-target").addClass("workAnimation");
-}, function() {
-	// $(".WR").removeClass("red-shake");
-	// $(".WB").removeClass("blue-shake");
-	$(".work-target").removeClass("workAnimation");
-});
-
-$(".about-hover").hover(function() {
-	// $(".AR").addClass("red-shake");
-	// $(".AB").addClass("blue-shake");
-	$(".about-target").addClass("aboutAnimation");
-}, function() {
-	// $(".AR").removeClass("red-shake");
-	// $(".AB").removeClass("blue-shake");
-	$(".about-target").removeClass("aboutAnimation");
+$(document).ready(function() {
+	navInit();
+	workInit();
 });
 
 // randomly animate a nav button occasionally

@@ -8,6 +8,7 @@ html, body {
 .clear {
   opacity: 0;
   z-index: -999;
+  pointer-events: none;
 }
 
 .page-background {
@@ -16,10 +17,10 @@ html, body {
   width: 100vw;
   z-index: -1000;
   pointer-events: none;
-  background-image: url(../images/testN.png);
-  background-size: 1600% 400%;
+  background-image: url(../images/layer1.png);
+  background-size: 200% 100%;
   opacity: 1;
-  transition: transform 1s linear, background-position 4s linear;
+  transition: transform 1s linear, background-position 1.5s ease-in-out;
 }
 
 .page-background2 {
@@ -28,10 +29,10 @@ html, body {
   width: 100vw;
   z-index: -1000;
   pointer-events: none;
-  background-image: url(../images/test3N.png);
-  background-size: 1600% 400%;
+  background-image: url(../images/layer2.png);
+  background-size: 200% 100%;
   opacity: .6;
-  transition: transform 1s linear, background-position 4s linear;
+  transition: transform 1s linear, background-position 1.5s ease-in-out;
 }
 
 .social-container {
@@ -97,15 +98,14 @@ html, body {
   text-align: center;
   pointer-events: none;
   font-weight: bold;
-  transition: opacity 1s linear;
+  transition: opacity .5s linear;
 }
 
 .contact-target {
   display: inline-block;
-  vertical-align: center;
-  height: 9vh;
+  height: 100%;
   position: relative;
-  width: 20px;
+  width: 27px;
   transition: width .5s ease-in-out;
 }
 
@@ -165,15 +165,15 @@ html, body {
   pointer-events: none;
   font-weight: bold;
   transform: rotate(90deg);
-  transition: opacity 1s linear, transform 1s ease-in-out;
+  transition: opacity .5s linear, transform .8s ease-in-out;
 }
 
 .work-target {
   display: inline-block;
-  vertical-align: center;
-  height: 9vh;
+  height: 100%;
   position: relative;
-  width: 20px;
+  width: 27px;
+  transition: width .5s ease-in-out;
 }
 
 .work-target div {
@@ -210,16 +210,8 @@ html, body {
   pointer-events: auto;
 }
 
-.black {
-  z-index: 1;
-}
-
 .workAnimation {
   width: 24vh !important;
-}
-
-.workFix {
-  width: 25px;
 }
 
 .workAnimationMove {
@@ -268,15 +260,15 @@ html, body {
   pointer-events: none;
   font-weight: bold;
   transform: rotate(-90deg);
-  transition: opacity 1s linear;
+  transition: opacity .5s linear;
 }
 
 .about-target {
   display: inline-block;
   vertical-align: center;
-  height: 9vh;
+  height: 100%;
   position: relative;
-  width: 20px;
+  width: 27px;
   transition: width .5s ease-in-out;
 }
 

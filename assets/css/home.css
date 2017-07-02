@@ -29,19 +29,19 @@
 }
 
 .borders-top.show1 {
-  width: calc(53vw - 160px);
+  width: calc(50vw - 160px);
 }
 
 .borders-top.show1.show2 {
-  height: calc(42vh - 100px);
+  height: calc(40vh - 100px);
 }
 
 .borders-bottom.show1 {
-  height: calc(42vh - 100px);
+  height: calc(40vh - 100px);
 }
 
 .borders-bottom.show1.show2 {
-  width: calc(52vw - 160px);
+  width: calc(50vw - 160px);
 }
 
 

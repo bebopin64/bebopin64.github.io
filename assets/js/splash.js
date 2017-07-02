@@ -1,3 +1,17 @@
+
+setTimeout(function() {			
+	$(".splash").remove();
+			 $(".borders-top").addClass("show1");
+			 $(".borders-bottom").addClass("show1");
+			 $(".borders-top").addClass("show2");
+			 $(".borders-bottom").addClass("show2");
+				line1letters(); 
+				line1word();
+	}, 1000);
+
+
+
+
 // ------------------Stars------------------------------------
 
 var colorArr = ["white","white","white","white","white","white","white","white","white","white","#892F52","#D778B8","#7E45A4","#7E45A4","#554FBD"];
@@ -22,28 +36,28 @@ function populateStars() {
 	}
 }
 
-window.onload = function() {
-	console.log("hi");
-	setTimeout(function() {
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-		populateStars();
-	}, 100);
-}
+// window.onload = function() {
+// 	console.log("hi");
+// 	setTimeout(function() {
+// 		populateStars();
+// 		populateStars();
+// 		populateStars();
+// 		populateStars();
+// 		populateStars();
+// 	}, 100);
+// }
 
 
 // --------------------Create Rows------------------------------
-for (var i=0;i<100;i++) {
-	var time = Math.random()/5 + .8;
-	$(".splash-cont").append(
-		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform 1s ease-in-out;'></div>"
-	);
-	if (i === 99) {		
-		welcome();
-	}
-}
+// for (var i=0;i<100;i++) {
+// 	var time = Math.random()/5 + .8;
+// 	$(".splash-cont").append(
+// 		"<div class='row row"+i+"' style='transform-style: flat;height:100%; width: 1%; position:relative; background-color: black;float: left; transition: transform 1s ease-in-out;'></div>"
+// 	);
+// 	if (i === 99) {		
+// 		welcome();
+// 	}
+// }
 
 function welcome() {
 	var row = 44 + welcomeIndex*2;
